@@ -1,0 +1,371 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    @*<title>Home - Outsourcy</title>*@
+    <meta name="description"
+          content="Hire. Get Hired. We’re the Best Place for Both. hire your next talent Request Staff Ask for our various services Find Your Next Job Find Jobs create your account now The choice is yours, we’ve got you covered Featured Jobs Know your worth and find the job that qualify your life Social Media Specialist Media/Journalism/Publishing">
+    <meta property="og:site_name" content="Outsourcy - Outsourcy">
+    <!-- Stylesheets -->
+    <link href="~/css/bootstrap.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="~/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="~/images/favicon.png" type="image/x-icon">
+    @RenderSection("Styles",false)
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body data-anm=".anm">
+
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header-->
+        <header class="main-header  -type-12">
+            <div class="container-fluid">
+                <!-- Main box -->
+                <div class="main-box">
+                    <!--Nav Outer -->
+                    <div class="nav-outer">
+                        <div class="logo-box">
+                            <div class="logo"><a href="index.html"><img src="~/images/main-logo.png" alt="" title=""></a></div>
+                        </div>
+
+                        <nav class="nav main-menu">
+                            <ul class="navigation" id="navbar">
+                                <li class="current ">
+                                    <a asp-controller="Home" asp-action="Index"><span>Home</span></a>
+                                </li>
+
+                                <li class="dropdown">
+                                    <span>Out Sourcy </span>
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Pages" asp-action="About">About</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Pages" asp-action="OurIndustries">OUR Industries</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <span>Our Services</span>
+                                    <ul>
+                                        <li>
+                                            <a href="online-recruitment.html">Online recruitment</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Recruitment process outsourcing (rpo)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mass hiring / volume staffing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Manpower outsourcing — short & long term staffing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Payroll & personnel outsourcing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">EOR(employer of recording)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OBO (offshore & back-office outsourcing solutions)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Professional employer organization (PEO)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HR consulting services</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <span>Job Board</span>
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Job" asp-action="Jobs">Jobs</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Employee" asp-action="Employers">Employers</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Candidate" asp-action="Candidates">Candidates</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Job" asp-action="JobPackages">Job Packages</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="">
+                                    <a asp-controller="Pages" asp-action="Contact"><span>Contact</span></a>
+                                </li>
+                                <li class="dropdown">
+                                    <span>News</span>
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="News" asp-action="Blog">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="News" asp-action="SuccessStories">Success stories</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <!-- Only for Mobile View -->
+                                <li class="mm-add-listing">
+                                    <a href="add-listing.html" class="theme-btn btn-style-one">Job Post</a>
+                                    <span>
+                                        <span class="contact-info">
+                                            <span class="phone-num"><span>Call us</span><a href="tel:1234567890">123 456 7890</a></span>
+                                            <span class="address">329 Queensberry Street, North Melbourne VIC <br>3051, Australia.</span>
+                                            <a href="mailto:contact@out-sourcy.com" class="email">contact@out-sourcy.com</a>
+                                        </span>
+                                        <span class="social-links">
+                                            <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                            <a href="#"><span class="fab fa-twitter"></span></a>
+                                            <a href="#"><span class="fab fa-instagram"></span></a>
+                                            <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Main Menu End-->
+                    </div>
+
+                    <div class="outer-box">
+                        <!-- Login/Register -->
+                        <div class="btn-box">
+                            @if (manger.IsSignedIn(User))
+                            {
+                               <p >Hi @User.Identity?.Name</p> 
+                            }
+                            else{
+                            <a type="button" class="theme-btn btn-style-three" asp-action="Login"asp-controller="Users">Login / Register</a>
+                            }
+                            <a asp-controller="Job" asp-action="JobSubscribe" class="theme-btn btn-style-one"><span class="btn-title">Get your FREE trial</span></a>
+                            <a href="#" class="theme-btn btn-sm  btn-style-one w-auto " style="min-width: unset;">
+                                <span class="icon fs-5 lar la-bell"></span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sticky Header  -->
+            <div class="sticky-header">
+                <div class="auto-container">
+
+                    <div class="main-box">
+                        <div class="logo-box">
+                            <div class="sticky-logo"><a href="index.html"><img src="~/images/main-logo.png" alt="" title=""></a></div>
+                        </div>
+
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </div>
+                </div>
+            </div>
+            <!-- End Sticky Menu -->
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="logo"><a href="index.html"><img src="~/images/main-logo.png" alt="" title=""></a></div>
+
+                <!--Nav Box-->
+                <div class="nav-outer clearfix">
+
+                    <div class="outer-box">
+                        <!-- Login/Register -->
+                        <div class="login-box">
+                            <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
+                        </div>
+
+                        <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Nav -->
+            <div id="nav-mobile"></div>
+        </header>
+        <!--End Main Header -->
+        @RenderBody()
+
+
+        <!-- Main Footer -->
+        <footer class="main-footer alternate">
+            <div class="auto-container">
+                <!--Widgets Section-->
+                <div class="widgets-section">
+                    <div class="row">
+                        <div class="big-column col-xl-3 col-lg-3 col-md-12">
+                            <div class="footer-column about-widget">
+                                <div class="logo"><a href="#"><img src="~/images/logo-large.png" alt="" width="150"></a></div>
+                                <p class="phone-num"><span>Call us </span><a href="tel:201123392202">+201123392202</a><br><a href="tel:+237611739">+237611739</a></p>
+                                <p class="address">
+                                    65 A1 ANSSAR ST. INTERSECTION WITH MOHI<br> EL DIN sn DOKKI. <br><a href="mailto:contact@out-sourcy.com" class="email">contact@out-sourcy.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="big-column col-xl-9 col-lg-9 col-md-12">
+                            <div class="row ">
+                                <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                        <h4 class="widget-title">Site</h4>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><a href="#">HR CONSULTING SERVICES</a></li>
+                                                <li><a href="#">EOR (EMPLOYER OF RECORDING)</a></li>
+                                                <li><a href="#">OBO (OFFSHORE & BACKOFFICE OUTSOURCING SOLUTIONS)</a></li>
+                                                <li><a href="#">PAYROLL & PERSONNEL OUTSOURCING</a></li>
+                                                <li><a href="#">MANPOWER OUTSOURCING - SHORT & LONG TERM STAFFING</a></li>
+                                                <li><a href="#">CV Leads And Executive Search</a></li>
+                                                <li><a href="#">MASS HIRING / VOLUME STAFFING</a></li>
+                                                <li><a href="#">RECRUITMENT PROCESS OUTSOURCING (RPO)</a></li>
+                                                <li><a href="#">PROFESSIONAL EMPLOYER ORGANIZATION (PEO)</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                        <h4 class="widget-title">For Employers</h4>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><a href="#"> All Employers</a></li>
+                                                <li><a href="#">Employer Dashboard </a></li>
+                                                <li><a href="#"> Submit Job</a></li>
+                                                <li><a href="#"> Job Packages</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                                    <div class="footer-widget links-widget">
+                                        <h4 class="widget-title">About Us</h4>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">About us</a></li>
+                                                <li><a href="#">Terms</a></li>
+                                                <li><a href="#">Packages</a></li>
+                                                <li> <a href="our-industries.html">OUR Industries</a></li>
+                                                <li><a href="#">OUR SERVICES</a></li>
+                                                <li><a href="#">Delete Your Account</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Bottom-->
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="copyright-text  flex-md-fill text-center">© 2023 OUTSOURCY. All Right Reserved.</div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll To Top -->
+            <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+        </footer>
+        <!-- End Main Footer -->
+
+    </div><!-- End Page Wrapper -->
+    <!-- partial:index.partial.html -->
+    <div id="sy-whatshelp">
+        <span class="_bc_cbb_btn__underlay" style="background-color: rgb(25, 103, 210);"></span>
+        <div class="sywh-services">
+            <a href="tel:8888888" class="phone" data-tooltip="Phone" data-placement="left">
+                <i class="fa fa-phone-volume"></i>
+            </a>
+            <a href="mailto:" class="Email" data-tooltip="Email" data-placement="left" target="_blank">
+                <i class="fa fa-at"></i>
+            </a>
+            <a href="#" class="whatsapp" data-tooltip="WhatsApp" data-placement="left" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+
+        </div>
+        <a class="sywh-open-services" data-tooltip="Questions? Let's Chat" data-placement="left">
+            <i class="fa fa-comments"></i>
+            <i class="fa fa-times"></i>
+        </a>
+    </div>
+    <!-- partial -->
+    
+    
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    @RenderSection("Scripts",false)
+    <script src="~/js/chosen.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.fancybox.js"></script>
+    <!--  <script src="js/jquery.modal.min.js"></script> -->
+    <script src="~/js/mmenu.polyfills.js"></script>
+    <script src="~/js/mmenu.js"></script>
+    <script src="~/js/appear.js"></script>
+    <script src="~/js/anm.min.js"></script>
+    <script src="~/js/ScrollMagic.min.js"></script>
+    <script src="~/js/rellax.min.js"></script>
+    <script src="~/js/owl.js"></script>
+    <script src="~/js/wow.js"></script>
+    <script src="~/js/script.js"></script>
+    <script src="~/js/helper.js"></script>
+  @*  <script>
+        function login() {
+            debugger
+            alert("from function")
+            var model={
+                fullName: $("#email").val,
+                password: $("#password").val,
+                confirmPassword: $("#confirmPassword").val,
+                phoneNumber: $("#phone").val,
+                company: $("#company").val
+            }
+            Helper.AjaxCallPost("/api/Users/RegisterAsEmployeer", JSON.stringify(model), function (data) {
+                alert(data);
+            },
+                function () {
+                    alert("faild");
+                })
+        }
+    </script>*@
+</body>
+
+</html>

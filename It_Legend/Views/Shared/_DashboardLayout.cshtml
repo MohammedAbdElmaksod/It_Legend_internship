@@ -1,0 +1,412 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Outsourcy - Candidate Dashboard Profile</title>
+
+    <!-- Stylesheets -->
+    <link href="~/css/bootstrap.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href=" ~/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="~/images/favicon.png" type="image/x-icon">
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+    <div class="page-wrapper dashboard">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Header Span -->
+        <span class="header-span"></span>
+
+        <!-- Main Header-->
+        <header class="main-header header-shaddow">
+            <div class="container-fluid">
+                <!-- Main box -->
+                <div class="main-box">
+                    <!--Nav Outer -->
+                    <div class="nav-outer">
+                        <div class="logo-box">
+                            <div class="logo"><a href="index.html"><img src="~/images/main-logo.png" alt="" title=""></a></div>
+                        </div>
+
+                        <nav class="nav main-menu">
+                            <ul class="navigation" id="navbar">
+                                <li class="current ">
+                                    <a asp-controller="Home" asp-action="Index"><span>Home</span></a>
+                                </li>
+
+                                <li class="dropdown">
+                                    <span>Out Sourcy </span>
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Pages" asp-action="About">About</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Pages" asp-action="OurIndustries">OUR Industries</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <span>Our Services</span>
+                                    <ul>
+                                        <li>
+                                            <a href="online-recruitment.html">Online recruitment</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Recruitment process outsourcing (rpo)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Mass hiring / volume staffing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Manpower outsourcing — short & long term staffing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Payroll & personnel outsourcing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">EOR(employer of recording)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">OBO (offshore & back-office outsourcing solutions)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Professional employer organization (PEO)</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">HR consulting services</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <span>Job Board</span>
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Job" asp-action="Jobs">Jobs</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Employee" asp-action="Employers">Employers</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Candidate" asp-action="Candidates">Candidates</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Job" asp-action="JobPackages">Job Packages</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="">
+                                    <a asp-controller="Pages" asp-action="Contact"><span>Contact</span></a>
+                                </li>
+                                <li class="dropdown">
+                                    <span>News</span>
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="News" asp-action="Blog">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="News" asp-action="SuccessStories">Success stories</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <!-- Only for Mobile View -->
+                                <li class="mm-add-listing">
+                                    <a href="add-listing.html" class="theme-btn btn-style-one">Job Post</a>
+                                    <span>
+                                        <span class="contact-info">
+                                            <span class="phone-num"><span>Call us</span><a href="tel:1234567890">123 456 7890</a></span>
+                                            <span class="address">329 Queensberry Street, North Melbourne VIC <br>3051, Australia.</span>
+                                            <a href="mailto:contact@out-sourcy.com" class="email">contact@out-sourcy.com</a>
+                                        </span>
+                                        <span class="social-links">
+                                            <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                            <a href="#"><span class="fab fa-twitter"></span></a>
+                                            <a href="#"><span class="fab fa-instagram"></span></a>
+                                            <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Main Menu End-->
+                    </div>
+                    <div class="outer-box gap-4">
+                        <!-- Dashboard Option -->
+                        <div class="dropdown dashboard-option">
+                            <ul>
+                                <li>
+                                    <a asp-controller="Candidate" asp-action="CandidateProfile" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
+                                        <img src="~/images/candidate/candidate-user.png" alt="avatar" class="thumb">
+                                        <span class="name">My Account</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="dropdown-menu">
+                                <li><a href="employer-dashboard.html"> <i class="flaticon-book"></i> User Dashboard</a></li>
+                                <li class="active"><a href="employer-dashboard-profile.html"><i class="flaticon-businessman"></i>Profile</a></li>
+
+
+                                <li><a href="candidate-applicants-Jobs.html"><i class="flaticon-megaphone"></i> Applicants Jobs</a></li>
+                                <li><a href=""><i class="flaticon-bookmark"></i>Shortlist Jobs </a></li>
+                                <li><a href=""><i class="flaticon-user"></i>Following Employers </a></li>
+                                <li><a href=""><i class="flaticon-research"></i>  Alerts Jobs</a></li>
+                                <li><a href=""><i class="flaticon-chat"></i>Messages</a></li>
+                                <li><a href="change-password.html"><i class="flaticon-password"></i> Change Password</a></li>
+                                <li><a href=""><i class="flaticon-trash"></i>Delete Profile</a></li>
+                                <li><a href=""><i class=" las la-power-off"></i>Logout</a></li>
+                            </ul>
+                        </div>
+                        <a asp-controller="Job" asp-action="JobSubscribe" class="theme-btn btn-style-one small">
+                            <span class="btn-title">
+                                Get your FREE
+                                trial
+                            </span>
+                        </a>
+                        <!-- Notification -->
+                        <div class="dropdown dashboard-option">
+                            <button type="button" class=" btn btn-sm btn-outline-primary  position-relative" data-toggle="dropdown" aria-expanded="false">
+                                <span class=" fs-5 lar la-bell"></span>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                </span>
+                            </button>
+                            <div class="dropdown-menu w-100 py-3 px-1" style="min-width: 375px;">
+                                <div class="notification-widget ls-widget mb-2">
+                                    <div class="widget-content px-2 ">
+                                        <ul class="notification-list">
+                                            <!-- Item -->
+                                            <li class="px-1 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+
+                                                    <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                                    <button type="button" class="btn btn-outline-danger  shadow-sm rounded-circle btn_sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
+                                                        <span class="flaticon-close-1"></span>
+                                                    </button>
+                                                </div>
+                                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                                <p class="w-100 text-muted fst-italic mb-1 lh-sm"><strong>Content Creator</strong> by <a href="#" class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a></p>
+                                            </li>
+                                            <!-- Item -->
+                                            <li class="px-1 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+
+                                                    <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                                    <button type="button" class="btn btn-outline-danger  shadow-sm rounded-circle btn_sm" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top" title="Delete">
+                                                        <span class="flaticon-close-1"></span>
+                                                    </button>
+                                                </div>
+                                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                                <p class="w-100 text-muted fst-italic mb-1 lh-sm">
+                                                    <strong>Content Creator</strong> by <a href="#"
+                                                                                           class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a>
+                                                </p>
+                                            </li>
+                                            <!-- Item -->
+                                            <li class="px-1 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+
+                                                    <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                                    <button type="button" class="btn btn-outline-danger  shadow-sm rounded-circle btn_sm" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top" title="Delete">
+                                                        <span class="flaticon-close-1"></span>
+                                                    </button>
+                                                </div>
+                                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                                <p class="w-100 text-muted fst-italic mb-1 lh-sm">
+                                                    <strong>Content Creator</strong> by <a href="#"
+                                                                                           class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a>
+                                                </p>
+                                            </li>
+                                            <!-- Item -->
+                                            <li class="px-1 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+
+                                                    <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                                    <button type="button" class="btn btn-outline-danger  shadow-sm rounded-circle btn_sm" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top" title="Delete">
+                                                        <span class="flaticon-close-1"></span>
+                                                    </button>
+                                                </div>
+                                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                                <p class="w-100 text-muted fst-italic mb-1 lh-sm">
+                                                    <strong>Content Creator</strong> by <a href="#"
+                                                                                           class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a>
+                                                </p>
+                                            </li>
+                                            <!-- Item -->
+                                            <li class="px-1 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+
+                                                    <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                                    <button type="button" class="btn btn-outline-danger  shadow-sm rounded-circle btn_sm" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top" title="Delete">
+                                                        <span class="flaticon-close-1"></span>
+                                                    </button>
+                                                </div>
+                                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                                <p class="w-100 text-muted fst-italic mb-1 lh-sm">
+                                                    <strong>Content Creator</strong> by <a href="#"
+                                                                                           class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a>
+                                                </p>
+                                            </li>
+                                            <!-- Item -->
+                                            <li class="px-1 mb-2">
+                                                <div class="d-flex align-items-center justify-content-between">
+
+                                                    <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                                    <button type="button" class="btn btn-outline-danger  shadow-sm rounded-circle btn_sm" data-bs-toggle="tooltip"
+                                                            data-bs-placement="top" title="Delete">
+                                                        <span class="flaticon-close-1"></span>
+                                                    </button>
+                                                </div>
+                                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                                <p class="w-100 text-muted fst-italic mb-1 lh-sm">
+                                                    <strong>Content Creator</strong> by <a href="#"
+                                                                                           class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a>
+                                                </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Notification -->
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Header -->
+            <div class="mobile-header">
+                <div class="logo"><a href="index.html"><img src="~/images/main-logo.png" alt="" title=""></a></div>
+
+                <!--Nav Box-->
+                <div class="nav-outer clearfix">
+
+                    <div class="outer-box">
+                        <!-- Login/Register -->
+                        <div class="login-box">
+                            <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
+                        </div>
+
+                        <button id="toggle-user-sidebar"><img src="~/images/resource/company-6.png" alt="avatar" class="thumb"></button>
+                        <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mobile Nav -->
+            <div id="nav-mobile"></div>
+        </header>
+        <!--End Main Header -->
+        <!-- Sidebar Backdrop -->
+        <div class="sidebar-backdrop"></div>
+
+        <!-- User Sidebar -->
+        <div class="user-sidebar">
+
+            <div class="sidebar-inner">
+                <div class="w-100 d-flex align-items-center justify-content-star gap-4">
+                    <img src="~/images/candidate/candidate-user.png" alt="avatar" class="thumb shadow  rounded-circle" width="40">
+                    <div class="flex-fill">
+                        <a asp-controller="Candidate" asp-action="CandidateProfile" target="_blank" class=" btn-link">Candidate</a>
+                        <a asp-controller="Candidate" asp-action="CandidateProfile"  target=" _blank" class="theme-btn  btn-style-one small">View Profile</a>
+                    </div>
+
+                </div>
+                <hr class="my-2">
+                <ul class="navigation">
+                    <li class="active"><a asp-controller="Candidate" asp-action="CandidateDashboard"> <i class="flaticon-book"></i> User Dashboard</a></li>
+                    <li><a asp-controller="Candidate" asp-action="CandidateProfile"><i class="flaticon-businessman"></i>Profile</a></li>
+
+
+                    <li><a asp-controller="Candidate" asp-action="CandidateApplicants"><i class="flaticon-megaphone"></i> Applicants Jobs</a></li>
+                    <li><a asp-controller="Candidate"asp-action="CandidateShortlist"><i class="flaticon-bookmark"></i>Shortlist Jobs </a></li>
+                    <li><a href=""><i class="flaticon-user"></i>Following Employers </a></li>
+                    <li><a asp-controller="Candidate" asp-action="CandidateAlerts"><i class="flaticon-research"></i>  Alerts Jobs</a></li>
+                    <li><a href=""><i class="flaticon-chat"></i>Messages</a></li>
+                    <li><a href="change-password.html"><i class="flaticon-password"></i> Change Password</a></li>
+                    <li><a href=""><i class="flaticon-trash"></i>Delete Profile</a></li>
+                    <li><a href=""><i class=" las la-power-off"></i>Logout</a></li>
+                </ul>
+                <div class="skills-percentage">
+                    <h4>Skills Percentage <span class="text-danger fw-bold">45%</span></h4>
+
+                    <!--Skills-->
+                    <div class="progress-bars mt-3">
+                        <!--Skill Item-->
+                        <div class="bar-item style-two">
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="45">
+                                        <div class="skill-percentage">
+                                            <div class="count-box">
+                                                <span class="count-text" data-speed="1000" data-stop="45">0</span>%
+                                            </div>
+                                        </div>
+                                        <p class="py-3 text-primary">45% Profile Complate </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Put value for "Cover Image" field to increase your skill up to <span class="text-success fw-bold">"86%"</span></p>
+                </div>
+            </div>
+        </div>
+        <!-- End User Sidebar -->
+        @RenderBody()
+        <!-- Copyright -->
+        <div class="copyright-text">
+            <p>© 2023 OutSourcy All Right Reserved.</p>
+        </div>
+
+    </div><!-- End Page Wrapper -->
+
+
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/chosen.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery-ui.min.js"></script>
+    <script src="~/js/jquery.fancybox.js"></script>
+    <!-- <script src="js/jquery.modal.min.js"></script> -->
+    <script src="~/js/mmenu.polyfills.js"></script>
+    <script src="~/js/mmenu.js"></script>
+    <script src="~/js/appear.js"></script>
+    <script src="~/js/ScrollMagic.min.js"></script>
+    <script src="~/js/rellax.min.js"></script>
+    <script src="~/js/owl.js"></script>
+    <script src="~/js/wow.js"></script>
+    <script src="~/js/knob.js"></script>
+    <script src="~/js/script.js"></script>
+    <!--Google Map APi Key-->
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDaaCBm4FEmgKs5cfVrh3JYue3Chj1kJMw&#038;ver=5.2.4"></script>
+    <script src="~/js/map-script.js"></script>
+    <!--End Google Map APi-->
+    @RenderSection("Scripts",false)
+</body>
+
+</html>

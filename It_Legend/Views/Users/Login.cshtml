@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "_layout";
+}
+@model userModel
+<title>Login</title>
+<!-- Modal Login -->
+<br />
+<br />
+<div id="login-modal" tabindex="-1" aria-labelledby="login modal" s-keyboard="false" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="">Login to Outsourcy</h3>
+                <button type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Login Form -->
+                <div class="login-form default-form">
+                    <div class="form-inner">
+                        <!--Login Form-->
+                        <form method="post" asp-controller="Users"asp-action="Login">
+                            <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" asp-for="Email" placeholder="Username" required>
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input id="password-field" type="password" asp-for="Password" placeholder="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="field-outer">
+                                    <div class="input-group checkboxes square">
+                                        <input type="checkbox" name="remember-me" value="" id="remember">
+                                        <label for="remember" class="remember"><span class="custom-checkbox"></span> Keep me signed in</label>
+                                    </div>
+                                    <a href="#" class="pwd">Forgot password?</a>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button class="theme-btn btn-style-one">Log In</button>
+                            </div>
+                        </form>
+
+                        <div class="bottom-box">
+                            <div class="text">
+                                Don't have an account?
+
+                                <a type="button" class="signup" asp-action="Register" asp-controller="Users">Signup</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End Login Form -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal Register -->

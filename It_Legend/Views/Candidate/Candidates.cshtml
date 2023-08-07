@@ -1,0 +1,301 @@
+﻿@model List<Candidates>
+@{
+    Layout = "_layout";
+}
+<title>Candidates - Outsourcy</title>
+<!--Page Title-->
+<section class="page-title">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1>Candidates</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Candidates</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+<!-- Listing Section -->
+<section class="ls-section">
+    <div class="auto-container">
+        <div class="filters-backdrop"></div>
+
+        <div class="row">
+
+            <!-- Filters Column -->
+            <div class="filters-column col-lg-4 col-md-12 col-sm-12">
+                <div class="inner-column">
+                    <div class="filters-outer">
+                        <button type="button" class="theme-btn close-filters">X</button>
+
+                        <!-- Filter Block -->
+                        <div class="filter-block">
+                            <h4>Search by Keywords</h4>
+                            <div class="form-group">
+                                <input type="text" name="listing-search"
+                                       placeholder="Candidate, keywords, or company">
+                                <span class="icon flaticon-search-3"></span>
+                            </div>
+                        </div>
+
+                        <!-- Filter Block -->
+                        <div class="filter-block">
+                            <h4>Category</h4>
+                            <div class="form-group">
+                                <select class="chosen-select">
+                                    <option>Choose a category</option>
+                                    <option>Residential</option>
+                                    <option>Commercial</option>
+                                    <option>Industrial</option>
+                                    <option>Apartments</option>
+                                    <option>Residential</option>
+                                    <option>Commercial</option>
+                                    <option>Industrial</option>
+                                    <option>Apartments</option>
+                                    <option>Residential</option>
+                                    <option>Commercial</option>
+                                    <option>Industrial</option>
+                                    <option>Apartments</option>
+                                    <option>Residential</option>
+                                    <option>Commercial</option>
+                                    <option>Industrial</option>
+                                    <option>Apartments</option>
+                                </select>
+                                <span class="icon flaticon-briefcase"></span>
+                            </div>
+                        </div>
+                        <!-- Filter Block -->
+                        <div class="filter-block">
+                            <h4>Candidates Gender</h4>
+                            <div class="form-group">
+                                <select class="chosen-select">
+                                    <option>Choose a category</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Both</option>
+                                </select>
+                                <span class="icon flaticon-briefcase"></span>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Switchbox Outer  -->
+                        <div class="switchbox-outer">
+                            <h4>Experience</h4>
+                            <ul class="switchbox">
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                        <span class="title">Fresh</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                        <span class="title">1 Year</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                        <span class="title">2 Year</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                        <span class="title">3 Year</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                        <span class="title">4 Year</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                        <span class="title">5 Year</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Switchbox Outer  -->
+                        <div class="switchbox-outer">
+                            <h4>Qualification</h4>
+                            <ul class="switchbox">
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                        <span class="title">Certificate</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                        <span class="title">Associate Degree</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                        <span class="title">Bachelor Degree</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                        <span class="title">Master’s Degree</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                        <span class="title">Doctorate Degree</span>
+                                    </label>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <button type="button" class=" theme-btn btn-style-one d-block w-100 my-3">Candidates Find</button>
+
+                    </div>
+
+                </div>
+                <!--  -->
+                <div class="inner-column">
+                    <div class="filters-outer">
+                        <button type="button" class="theme-btn close-filters">X</button>
+
+                        <!-- Filter Block -->
+                        <div class="filter-block">
+                            <h4>Candidate Alert</h4>
+                            <div class="mb-3 w-100">
+                                <label for="job-alert-title">Title</label>
+                                <input type="text" class="px-3" name="job-alert-title" id="job-alert-title"
+                                       placeholder="Title" required>
+
+                            </div>
+                            <!-- Filter Block -->
+                            <div class="filter-block">
+                                <div class="form-group">
+
+                                    <select class="chosen-select px-3" id="email-freq" required>
+                                        <option>Email Frequency</option>
+                                        <option>Daily</option>
+                                        <option>Weekly</option>
+                                        <option>Fortnight</option>
+                                        <option>Monthly</option>
+                                    </select>
+                                    <span class="icon flaticon-envelope"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class=" theme-btn btn-style-one d-block w-100 my-3">
+                            Save Job
+                            Alert
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="content-column col-lg-8 col-md-12 col-sm-12">
+                <div class="ls-outer">
+                    <button type="button" class="theme-btn btn-style-two toggle-filters">Show Filters</button>
+
+                    <!-- ls Switcher -->
+                    <div class="ls-switcher">
+                        <div class="showing-result">
+                            <div class="text">Showing <strong>41-60</strong> of <strong>944</strong> jobs</div>
+                        </div>
+                        <div class="sort-by">
+                            <select class="chosen-select">
+                                <option>New Jobs</option>
+                                <option>Freelance</option>
+                                <option>Full Time</option>
+                                <option>Internship</option>
+                                <option>Part Time</option>
+                                <option>Temporary</option>
+                            </select>
+
+                            <select class="chosen-select">
+                                <option>Show 10</option>
+                                <option>Show 20</option>
+                                <option>Show 30</option>
+                                <option>Show 40</option>
+                                <option>Show 50</option>
+                                <option>Show 60</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <!-- Candidate block three -->
+                    <!-- Ready to Work -->
+                    @foreach(var candidate in Model)
+                    {
+                    <div class="candidate-block-three">
+                        <div class="inner-box">
+                            <div class="content">
+                                <figure class="image"><img src="@string.Format("/Uploads/Images/{0}",candidate.imgUrl)" alt=""></figure>
+                                    <h4 class="name"><a asp-controller="Candidate" asp-action="CandidateProfile" asp-route-id="@candidate.Id">@candidate.fullName</a></h4>
+                                <ul class="candidate-info">
+                                    <li class="designation"></li>
+                                    <li><span class="icon flaticon-map-locator"></span> @candidate.location</li>
+                                    <li><span class="icon flaticon-money"></span> @candidate.salary $ / hour</li>
+                                </ul>
+                                <ul class="post-tags">
+                                    <li><a href="#">App</a></li>
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Digital</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-box">
+                                <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                                <a asp-controller="Candidate" asp-action="CandidateProfile" asp-route-id="@candidate.Id"
+                                class="theme-btn btn-style-three"><span class="btn-title">View Profile</span></a>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    }
+                    
+
+
+                    <!-- Pagination -->
+                    <nav class="ls-pagination">
+                        <ul>
+                            <li class="prev"><a href="#"><i class="fa fa-arrow-left"></i></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#" class="current-page">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next"><a href="#"><i class="fa fa-arrow-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Listing Page Section -->
+@section Scripts{
+    <script src="~/js/jquery-ui.min.js"></script>
+    }

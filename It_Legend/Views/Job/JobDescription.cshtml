@@ -1,0 +1,200 @@
+﻿@model JobsWithRlated
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "_layout";
+}
+
+<title>Job Description - Outsourcy</title>
+
+<!-- Job Detail Section -->
+<section class="job-detail-section">
+    <!-- Upper Box -->
+    <div class="upper-box">
+        <div class="auto-container">
+            <!-- Job Block -->
+            <div class="job-block-seven">
+                <div class="inner-box">
+                    <div class="content">
+                        <span class="company-logo"><img src=@string.Format("/Uploads/Images/{0}",Model.imageUrl)" alt=""></span>
+                        <h4><a href="#">@Model.title</a></h4>
+                        <ul class="job-info">
+                            <li><span class="icon flaticon-briefcase"></span>@Model.kind?.kind</li>
+                            <li><span class="icon flaticon-clock-3"></span>@Model.CreatedDate.Value.ToString("dd/MM/yyyy")</li>
+                            <li><span class="icon flaticon-money-1"></span> @Model.salary$ / month</li>
+                        </ul>
+                        <ul class="job-other-info">
+                            <li class="time">@Model.type?.Type</li>
+                            <li class="privacy">@Model.privacey?.privacey</li>
+                            <li class="required">@Model.status?.status</li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-box flex-column">
+                        <div class="flex-fill text-start">
+                            <p class="mb-2">Application ends: <span class="text-danger">@Model.ExpirationDate.Date.ToString("dd/MM/yyyy")</span></p>
+                        </div>
+                        <div class="w-100">
+                            <a href="#" class="theme-btn btn-style-one">Apply For Job</a>
+                            <button class="bookmark-btn"><i class="flaticon-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="job-detail-outer">
+        <div class="auto-container">
+            <div class="row">
+                <div class="content-column col-lg-8 col-md-12 col-sm-12">
+                    <div class="job-detail">
+                        <h4>Job Description</h4>
+                        <p>
+                            @Model.jobDescripotion
+                        </p>
+                        <h4>Job Requirements</h4>
+
+                        <ul class=" ">
+                            <!-- Can you use and write class as "list-style-one or two or three or four " -->
+                            @foreach(var requirment in Model.jobRequirments.Split(',')){
+                            <li>@requirment</li>
+                            }
+                          
+                        </ul>
+                    </div>
+
+                    <!-- Other Options -->
+                    <div class="other-options">
+                        <div class="social-share">
+                            <h5>Share this job</h5>
+                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#" class="twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                            <a href="#" class="linkedin"><i class="fab fa-linkedin"></i> linkedin+</a>
+                        </div>
+                    </div>
+
+                    <!-- Related Jobs -->
+                    <div class="related-jobs">
+                        <div class="title-box">
+                            <h3>Related Jobs</h3>
+                            <div class="text">2020 jobs live - 293 added today.</div>
+                        </div>
+
+                        <!-- Job Block -->
+                            @if (Model.relatedJobs.Count == 0)
+                            {
+                                <p>No Related Jobs</p>
+                            }
+                            else
+                            {
+                            @foreach(var related in Model.relatedJobs)
+                        {
+
+                        <div class="job-block">
+                            <div class="inner-box">
+                                <div class="content">
+                                    <span class="company-logo">
+                                        <img src="@string.Format("/Uploads/Images/{0}",related.imageUrl)"
+                                             alt="">
+                                    </span>
+                                    <h4><a href="/Job/JobDescription?id=@related.Id">@related.title</a></h4>
+                                    <ul class="job-info">
+                                        <li><span class="icon flaticon-briefcase"></span> @related.kind?.kind</li>
+
+                                    </ul>
+                                    <ul class="job-other-info">
+                                        <li class="time">@related.type?.Type</li>
+                                        <li class="privacy">@related.privacey?.privacey</li>
+                                        <li class="required">@related.status?.status</li>
+                                    </ul>
+                                    <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                        }
+                                
+                            }
+
+                      
+
+                    </div>
+                </div>
+
+                <div class="sidebar-column col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar">
+                        <div class="sidebar-widget">
+                            <!-- Job Overview -->
+                            <h4 class="widget-title">Job Overview</h4>
+                            <div class="widget-content">
+                                <ul class="job-overview">
+                                    <li>
+                                        <i class="icon icon-calendar"></i>
+                                        <h5>Date Posted:@Model.CreatedDate.Value.Date</h5>
+                                        <span>@Model.salary / month</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-money-1"></i>
+                                        <h5>Offered Salary</h5>
+                                        <span>@Model.salary / month</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-waiting"></i>
+                                        <h5>Expiration date</h5>
+                                        <span>@Model.ExpirationDate.ToString("MMMM dd,yyyy")</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-businessman"></i>
+                                        <h5>Experience</h5>
+                                        <span>@Model.ExprinceYears</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-user"></i>
+                                        <h5>Gender</h5>
+                                        <span>@Model.gender</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-vector"></i>
+                                        <h5>Education</h5>
+                                        <span>@Model.education Degree</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-money"></i>
+                                        <h5>Career Level</h5>
+                                        <span>@Model.careerLevel</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon flaticon-location"></i>
+                                        <h5>Job Location</h5>
+                                        <span>@Model.jobLocation</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="sidebar-widget company-widget">
+                            <div class="widget-content">
+                                <div class="company-title">
+                                    <div class="company-logo"><img src="~/images/resource/company-logo/1-1.png" alt=""></div>
+                                    <h5 class="company-name">InVision</h5>
+                                    <a href="employer-profile.html" class="profile-link">View company profile</a>
+                                </div>
+
+                                <ul class="company-info">
+                                    <li class="justify-content-start gap-1">Categories: <a href="#">Accounting/Finance</a><a href="#">Business Development</a> <a href="#">Startup</a></li>
+                                    <li>Founded Date: <span>2023</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Job Detail Section -->
+<!-- Main Footer -->
+@section Scripts{
+
+    <script src="~/js/jquery-ui.min.js"></script>
+   }

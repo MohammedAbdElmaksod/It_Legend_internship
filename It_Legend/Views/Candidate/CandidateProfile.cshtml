@@ -1,0 +1,222 @@
+﻿@model Candidates
+@{
+    Layout = "_layout";
+}
+<title>Candidate Profile - Outsourcy</title>
+
+<!-- Candidate Detail Section -->
+<section class="candidate-detail-section">
+    <!-- Upper Box -->
+    <div class="upper-box">
+        <div class="auto-container">
+            <!-- Candidate block Five -->
+            <div class="candidate-block-five">
+                <div class="inner-box">
+                    <div class="content">
+                        <figure class="image"><img src="@string.Format("/Uploads/Images/{0}",Model.imgUrl)" alt=""></figure>
+                        <h4 class="name"><a href="#">@Model.fullName </a></h4>
+                        <ul class="candidate-info">
+                            <li class="designation"> @Model.Categories?.CategoryName </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="btn-box">
+                        <a href="#" class="theme-btn btn-style-one">Generate CV From Profile</a>
+                        <button class="bookmark-btn"><i class="la la-edit fs-3 py-2"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="candidate-detail-outer">
+        <div class="auto-container">
+            <div class="row">
+                <div class="content-column col-lg-8 col-md-12 col-sm-12">
+                    <div class="job-detail">
+                        <!-- Resume / Education -->
+                        <div class="resume-outer">
+                            <div class="upper-title">
+                                <h4>Education</h4>
+                            </div>
+                            <!-- Resume BLock -->
+                            <div class="resume-block">
+                                <div class="inner  pb-1">
+                                    <span class="name">M</span>
+                                    <div class="title-box">
+                                        <div class="info-box">
+                                            <h3>@Model.education</h3>
+                                            <span>@Model.universty</span>
+                                        </div>
+                                        <div class="edit-box">
+                                            <span class="year">@Model.gradutionYear</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!--  -->
+                    <div class="job-detail">
+                        <!-- Skills and Tools -->
+                        <div class="resume-outer">
+                            <div class="upper-title">
+                                <h4>Skills and Tools</h4>
+                            </div>
+                            <!-- Skills and Tools block -->
+                            @if (string.IsNullOrEmpty(Model.skils))
+                            {
+                                <p>No Skils yet</p>
+                            }
+                            else
+                            {
+                                foreach (var skill in Model.skils.Split(','))
+                                {
+                                    <div class="widget_skill">
+                                        <h3 class="skill_title">
+                                            @skill
+                                        </h3>
+                                       @* <div class="row row-cols-2">
+                                            <div class="col">
+                                                <p class="skill_text">Proficiency : 4 Out of 5</p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="skill_text">Proficiency : 4 Out of 5</p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="skill_text">Proficiency : 4 Out of 5</p>
+                                            </div>
+                                        </div>*@
+                                    </div>
+
+                                }
+
+                            }
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sidebar-column col-lg-4 col-md-12 col-sm-12">
+                    <aside class="sidebar">
+                        <div class="sidebar-widget">
+                            <div class="widget-content">
+                                <h4 class="widget-title mb-1">Add Skills</h4>
+                                <div class="text">
+                                    IJsers with 5+ related skills have more
+                                    chances get selected by employers
+                                </div>
+                                <div class="mt-2 w-100 text-end">
+                                    <a asp-controller="Candidate" asp-action="CandidateProfileDashboard" asp-route-id="@Model.Id" class="theme-btn btn-style-one small">Edit Your Profile</a>
+                                </div>
+                                <!--Skills-->
+                                <div class="progress-bars mt-3">
+                                    <!--Skill Item-->
+                                    <div class="bar-item style-two">
+                                        <div class="skill-bar">
+                                            <div class="bar-inner">
+                                                <div class="bar progress-line" data-width="90">
+                                                    <div class="skill-percentage">
+                                                        <div class="count-box">
+                                                            <span class="count-text" data-speed="2000"
+                                                                  data-stop="90">0</span>%
+                                                        </div>
+                                                    </div>
+                                                    <p class="py-3 text-primary">90% Profile Complate </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="sidebar-widget">
+                            <div class="widget-content">
+                                <ul class="job-overview">
+                                    <li>
+                                        <i class="icon icon-location"></i>
+                                        <h5>Location</h5>
+                                        <span>@Model.location</span>
+                                    </li>
+
+                                    <li>
+                                        <i class="icon icon-calendar"></i>
+                                        <h5>Years of experience: @Model.yearsOfExprince</h5>
+                                        <span>@Model.gender</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-user-2"></i>
+                                        <h5>Gender</h5>
+                                        <span>@Model.gender</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-expiry"></i>
+                                        <h5>Age</h5>
+                                        <span>@Model.age</span>
+                                    </li>
+
+                                    <li>
+                                        <i class="icon icon-salary"></i>
+                                        <h5>Education</h5>
+                                        <span>@Model.education</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon icon-language"></i>
+                                        <h5>Language:</h5>
+                                        <span>@Model.Languge</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sidebar-widget">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <div class="widget-content">
+                                <ul class="job-overview">
+                                    <li>
+                                        <i class="icon fs-4 text-primary fa fa-envelope"></i>
+                                        <h5>Email</h5>
+                                        <span>@Model.email</span>
+                                    </li>
+
+                                    <li>
+                                        <i class="icon fs-4 text-primary fa fa-mobile-alt"></i>
+                                        <h5>Phone Number</h5>
+                                        <span>@Model.phone</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon fs-4 text-primary fa fa-file-alt"></i>
+                                        <h5>Download CV</h5>
+                                        <a href="#" title="Download"></a>
+                                    </li>
+                                </ul>
+                                <div class="social-links ">
+                                    <h4 class="widget-title mb-2 ">Social Info</h4>
+                                    <div class="social-media-widget ">
+                                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" target="_blank"><i class="fab fa-google-plus"></i></a>
+                                        <a href="#" target="_blank"><i class="fab fa-behance"></i></a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End candidate Detail Section -->
+<!-- Main Footer -->

@@ -1,0 +1,146 @@
+﻿@model List<Employees>
+@{
+    Layout = "_layout";
+}
+<title>Employers - Outsourcy</title>
+<!--Page Title-->
+<section class="page-title">
+    <div class="auto-container">
+        <div class="title-outer">
+            <h1>Employers – Grid</h1>
+            <ul class="page-breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>Employers – Grid</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--End Page Title-->
+<!-- Listing Section -->
+<section class="ls-section">
+    <div class="auto-container">
+        <div class="filters-backdrop"></div>
+
+        <div class="row">
+
+            <!-- Filters Column -->
+            <div class="filters-column col-lg-4 col-md-12 col-sm-12">
+                <div class="inner-column pd-right">
+                    <div class="filters-outer">
+                        <button type="button" class="theme-btn close-filters">X</button>
+
+                        <!-- Filter Block -->
+                        <div class="filter-block">
+                            <h4>Search by Keywords</h4>
+                            <div class="form-group">
+                                <input type="text" name="listing-search" placeholder="Job title, keywords, or company" required>
+                                <span class="icon flaticon-search-3"></span>
+                            </div>
+                        </div>
+
+
+                        <!-- Filter Block -->
+                        <div class="filter-block">
+                            <h4>Category</h4>
+                            <div class="form-group">
+                                <select class="chosen-select">
+                                    <option>Choose a category</option>
+                                    <option>Residential</option>
+                                    <option>Commercial</option>
+                                    <option>Industrial</option>
+                                    <option>Apartments</option>
+                                </select>
+                                <span class="icon flaticon-briefcase"></span>
+                            </div>
+                        </div>
+
+
+                        <!-- Filter Block -->
+                        <div class="filter-block">
+                            <h4>Founded Date</h4>
+                            <div class="range-slider-one">
+                                <div class="range-slider"></div>
+                                <div class="input-outer">
+                                    <div class="amount-outer"><span class="count"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class=" theme-btn btn-style-one d-block w-100 my-3">Find Employers</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="content-column col-lg-8 col-md-12 col-sm-12">
+                <div class="ls-outer">
+                    <button type="button" class="theme-btn btn-style-two toggle-filters">Show Filters</button>
+
+                    <!-- ls Switcher -->
+                    <div class="ls-switcher">
+                        <div class="showing-result">
+                            <div class="text">Showing <strong>41-60</strong> of <strong>944</strong> employer</div>
+                        </div>
+                        <div class="sort-by">
+                            <select class="chosen-select">
+                                <option>New Jobs</option>
+                                <option>Freelance</option>
+                                <option>Full Time</option>
+                                <option>Internship</option>
+                                <option>Part Time</option>
+                                <option>Temporary</option>
+                            </select>
+
+                            <select class="chosen-select">
+                                <option>Show 10</option>
+                                <option>Show 20</option>
+                                <option>Show 30</option>
+                                <option>Show 40</option>
+                                <option>Show 50</option>
+                                <option>Show 60</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <!-- Company Block Four -->
+                        @foreach (var emp in Model)
+                        {
+                            <div class="company-block-four col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                                    <span class="featured">Featured</span>
+                                    <span class="company-logo">
+                                        <img src="@string.Format("/Uploads/Images/{0}",emp.imgUrl)"
+                                             alt="">
+                                    </span>
+                                    <h4><a asp-controller="Employee" asp-action="EmployerDescrioption" asp-route-id="@emp.Id">@emp.fullName</a></h4>
+                                    <ul class="job-info">
+                                        <li><span class="icon flaticon-map-locator"></span>@emp.location</li>
+                                        <li><span class="icon flaticon-briefcase"></span> Accounting </li>
+                                    </ul>
+                                    <div class="job-type">Open Jobs – 2</div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="ls-pagination">
+                        <ul>
+                            <li class="prev"><a href="#"><i class="fa fa-arrow-left"></i></a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#" class="current-page">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="next"><a href="#"><i class="fa fa-arrow-right"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Listing Page Section -->
+@section Scripts{
+    <script src="~/js/jquery-ui.min.js"></script>
+}

@@ -1,0 +1,423 @@
+﻿@{
+    Layout = "_dashboardlayout";
+}
+
+<!-- Dashboard -->
+<section class="user-dashboard">
+    <div class="dashboard-outer">
+        <div class="upper-title-box">
+            <h3>Applications statistics</h3>
+
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="ui-item">
+                    <div class="left">
+                        <i class="icon flaticon-briefcase-1"></i>
+                    </div>
+                    <div class="right">
+                        <h4>5</h4>
+                        <p>Posted Jobs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="ui-item ui-red">
+                    <div class="left">
+                        <i class="icon flaticon-resume"></i>
+                    </div>
+                    <div class="right">
+                        <h4>6</h4>
+                        <p>Application</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="ui-item ui-yellow">
+                    <div class="left">
+                        <i class="icon flaticon-chat"></i>
+                    </div>
+                    <div class="right">
+                        <h4>10</h4>
+                        <p>Review</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="ui-item ui-green">
+                    <div class="left">
+                        <i class="icon flaticon-bookmark"></i>
+                    </div>
+                    <div class="right">
+                        <h4>8</h4>
+                        <p>Shortlisted</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="col-lg-8">
+                <!-- Graph widget -->
+                <div class="graph-widget ls-widget">
+                    <div class="tabs-box">
+                        <div class="widget-title">
+                            <h4>Page Views</h4>
+
+                        </div>
+
+                        <div class="widget-content">
+                            <div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                            <canvas id="chart" width="1084" height="486" style="display: block; height: 243px; width: 542px;" class="chartjs-render-monitor"></canvas>
+                            <div class="chosen-outer mt-2">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <!--Tabs Box-->
+                                        <label for="" class="fw-normal mb-1">Jobs</label>
+                                        <select class="chosen-select">
+                                            <option>php</option>
+                                            <option>Software</option>
+                                            <option>wordpress</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <!--Tabs Box-->
+                                        <label for="" class="fw-normal mb-1">Number Days</label>
+                                        <select class="chosen-select">
+                                            <option>7 Days</option>
+                                            <option>15 Days</option>
+                                            <option>30 Days</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!--Skills Widget-->
+                <div class="widget-content bg-white p-4 rounded-3 mb-3">
+                    <h4 class="widget-title mb-3">Add Skills</h4>
+                    <div class="text fw-bold lh-sm">
+                        Users with 5+ related skills have more
+                        chances get selected by employers
+                    </div>
+                    <div class=" w-100 text-end my-4">
+                        <a asp-controller="Candidate" asp-action="CandidateProfileDashboard" class="theme-btn btn-style-one small">Edit Your Profile</a>
+                    </div>
+                    <!--Skills-->
+                    <div class="progress-bars my-4">
+                        <!--Skill Item-->
+                        <div class="bar-item style-two">
+                            <div class="skill-bar">
+                                <div class="bar-inner">
+                                    <div class="bar progress-line" data-width="90">
+                                        <div class="skill-percentage">
+                                            <div class="count-box"><span class="count-text" data-speed="2000" data-stop="90">0</span>%</div>
+                                        </div>
+                                        <p class="py-3 text-primary">90% Profile Complate </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--End Skills Widget-->
+
+
+            </div>
+
+
+            <div class="col-lg-8">
+                <!-- applicants Widget -->
+                <div class="applicants-widget ls-widget">
+                    <div class="widget-title">
+                        <h4>Recent Applicant</h4>
+                    </div>
+                    <div class="widget-content">
+                        <div class="row">
+                            <!-- Candidate block three -->
+                            <div class="candidate-block-three  col-12">
+                                <div class="inner-box">
+                                    <div class="content px-1">
+                                        <h4 class="name"><a href="#">Marc Mohsen Sobhi Habib</a> <span class="badge bg-info ">Pending</span></h4>
+                                        <ul class="candidate-info">
+                                            <li class="designation"><a href="#" class="btn-link text-primary fs-6">Content Creator</a></li>
+
+                                        </ul>
+                                        <p class="my-1"><span class="icon fs-4 flaticon-clock-3"></span> <span class="px-1">Applied date: June 19, 2023</span></p>
+
+                                    </div>
+                                    <div class="option-box">
+                                        <ul class="option-list">
+                                            <li><button data-text="Create Meeting"><span class="flaticon-add"></span></button></li>
+                                            <li><button data-text="Approve Application"><span class="flaticon-tick"></span></button></li>
+                                            <li><button data-text="Reject Aplication"><span class="las la-undo-alt"></span></button></li>
+                                            <li><button data-text="Download CV"><span class="fa fa-download"></span></button></li>
+                                            <li><button data-text="Remove  Aplication"><span class="flaticon-close-1"></span></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Candidate block three -->
+                            <div class="candidate-block-three  col-12">
+                                <div class="inner-box">
+                                    <div class="content px-1">
+                                        <h4 class="name"><a href="#">Marc Mohsen Sobhi Habib</a> <span class="badge bg-info ">Pending</span></h4>
+                                        <ul class="candidate-info">
+                                            <li class="designation"><a href="#" class="btn-link text-primary fs-6">Content Creator</a></li>
+
+                                        </ul>
+                                        <p class="my-1">
+                                            <span class="icon fs-4 flaticon-clock-3"></span> <span class="px-1">
+                                                Applied date: June 19,
+                                                2023
+                                            </span>
+                                        </p>
+
+                                    </div>
+                                    <div class="option-box">
+                                        <ul class="option-list">
+                                            <li><button data-text="Create Meeting"><span class="flaticon-add"></span></button></li>
+                                            <li><button data-text="Approve Application"><span class="flaticon-tick"></span></button></li>
+                                            <li><button data-text="Reject Aplication"><span class="las la-undo-alt"></span></button></li>
+                                            <li><button data-text="Download CV"><span class="fa fa-download"></span></button></li>
+                                            <li><button data-text="Remove  Aplication"><span class="flaticon-close-1"></span></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Candidate block three -->
+                            <div class="candidate-block-three  col-12">
+                                <div class="inner-box">
+                                    <div class="content px-1">
+                                        <h4 class="name"><a href="#">Marc Mohsen Sobhi Habib</a> <span class="badge bg-info ">Pending</span></h4>
+                                        <ul class="candidate-info">
+                                            <li class="designation"><a href="#" class="btn-link text-primary fs-6">Content Creator</a></li>
+
+                                        </ul>
+                                        <p class="my-1">
+                                            <span class="icon fs-4 flaticon-clock-3"></span> <span class="px-1">
+                                                Applied date: June 19,
+                                                2023
+                                            </span>
+                                        </p>
+
+                                    </div>
+                                    <div class="option-box">
+                                        <ul class="option-list">
+                                            <li><button data-text="Create Meeting"><span class="flaticon-add"></span></button></li>
+                                            <li><button data-text="Approve Application"><span class="flaticon-tick"></span></button></li>
+                                            <li><button data-text="Reject Aplication"><span class="las la-undo-alt"></span></button></li>
+                                            <li><button data-text="Download CV"><span class="fa fa-download"></span></button></li>
+                                            <li><button data-text="Remove  Aplication"><span class="flaticon-close-1"></span></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Candidate block three -->
+                            <div class="candidate-block-three  col-12">
+                                <div class="inner-box">
+                                    <div class="content px-1">
+                                        <h4 class="name"><a href="#">Marc Mohsen Sobhi Habib</a> <span class="badge bg-info ">Pending</span></h4>
+                                        <ul class="candidate-info">
+                                            <li class="designation"><a href="#" class="btn-link text-primary fs-6">Content Creator</a></li>
+
+                                        </ul>
+                                        <p class="my-1">
+                                            <span class="icon fs-4 flaticon-clock-3"></span> <span class="px-1">
+                                                Applied date: June 19,
+                                                2023
+                                            </span>
+                                        </p>
+
+                                    </div>
+                                    <div class="option-box">
+                                        <ul class="option-list">
+                                            <li><button data-text="Create Meeting"><span class="flaticon-add"></span></button></li>
+                                            <li><button data-text="Approve Application"><span class="flaticon-tick"></span></button></li>
+                                            <li><button data-text="Reject Aplication"><span class="las la-undo-alt"></span></button></li>
+                                            <li><button data-text="Download CV"><span class="fa fa-download"></span></button></li>
+                                            <li><button data-text="Remove  Aplication"><span class="flaticon-close-1"></span></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Candidate block three -->
+                            <div class="candidate-block-three  col-12">
+                                <div class="inner-box">
+                                    <div class="content px-1">
+                                        <h4 class="name"><a href="#">Marc Mohsen Sobhi Habib</a> <span class="badge bg-info ">Pending</span></h4>
+                                        <ul class="candidate-info">
+                                            <li class="designation"><a href="#" class="btn-link text-primary fs-6">Content Creator</a></li>
+
+                                        </ul>
+                                        <p class="my-1">
+                                            <span class="icon fs-4 flaticon-clock-3"></span> <span class="px-1">
+                                                Applied date: June 19,
+                                                2023
+                                            </span>
+                                        </p>
+
+                                    </div>
+                                    <div class="option-box">
+                                        <ul class="option-list">
+                                            <li><button data-text="Create Meeting"><span class="flaticon-add"></span></button></li>
+                                            <li><button data-text="Approve Application"><span class="flaticon-tick"></span></button></li>
+                                            <li><button data-text="Reject Aplication"><span class="las la-undo-alt"></span></button></li>
+                                            <li><button data-text="Download CV"><span class="fa fa-download"></span></button></li>
+                                            <li><button data-text="Remove  Aplication"><span class="flaticon-close-1"></span></button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <!-- Notification Widget -->
+                <div class="notification-widget ls-widget">
+                    <div class="widget-title">
+                        <h4>Notifications</h4>
+                    </div>
+                    <div class="widget-content">
+                        <ul class="notification-list">
+                            <!-- Item -->
+                            <li class="mb-1">
+                                <span class="icon flaticon-briefcase"></span>
+                                <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                <p class="w-100 text-muted fst-italic mb-1 lh-sm">
+                                    <strong>Content Creator</strong> by <a href="#"
+                                                                           class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a>
+                                </p>
+                            </li>
+                            <!-- Item -->
+                            <li class="mb-1">
+                                <span class="icon flaticon-briefcase"></span>
+                                <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                <p class="w-100 text-muted fst-italic mb-1 lh-sm">
+                                    <strong>Content Creator</strong> by <a href="#"
+                                                                           class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a>
+                                </p>
+                            </li>
+                            <!-- Item -->
+                            <li class="mb-1">
+                                <span class="icon flaticon-briefcase"></span>
+                                <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                <p class="w-100 text-muted fst-italic mb-1 lh-sm">
+                                    <strong>Content Creator</strong> by <a href="#"
+                                                                           class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a>
+                                </p>
+                            </li>
+                            <!-- Item -->
+                            <li class="mb-1">
+                                <span class="icon flaticon-briefcase"></span>
+                                <span class="text-muted fst-italic flex-fill">1 week ago</span>
+                                <p class="text-muted fst-italic mb-1 lh-sm">A new application is submitted on your job</p>
+                                <p class="w-100 text-muted fst-italic mb-1 lh-sm">
+                                    <strong>Content Creator</strong> by <a href="#"
+                                                                           class="lh-sm  text-primary  px-1 py-0 d-inline-block">Marc Mohsen Sobhi Habib.</a>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Dashboard -->
+@section Scripts{
+    <script>
+        Chart.defaults.global.defaultFontFamily = "Sofia Pro";
+        Chart.defaults.global.defaultFontColor = '#888';
+        Chart.defaults.global.defaultFontSize = '14';
+
+        var ctx = document.getElementById('chart').getContext('2d');
+
+        var chart = new Chart(ctx, {
+
+            type: 'line',
+            // The data for our dataset
+            data: {
+                labels: ["January", "February", "March", "April", "May", "June"],
+                // Information about the dataset
+                datasets: [{
+                    label: "Views",
+                    backgroundColor: 'transparent',
+                    borderColor: '#1967D2',
+                    borderWidth: "1",
+                    data: [196, 132, 215, 362, 210, 252],
+                    pointRadius: 3,
+                    pointHoverRadius: 3,
+                    pointHitRadius: 10,
+                    pointBackgroundColor: "#1967D2",
+                    pointHoverBackgroundColor: "#1967D2",
+                    pointBorderWidth: "2",
+                }]
+            },
+
+            // Configuration options
+            options: {
+
+                layout: {
+                    padding: 10,
+                },
+
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: false
+                },
+
+                scales: {
+                    yAxes: [{
+                        scaleLabel: {
+                            display: false
+                        },
+                        gridLines: {
+                            borderDash: [6, 10],
+                            color: "#d8d8d8",
+                            lineWidth: 1,
+                        },
+                    }],
+                    xAxes: [{
+                        scaleLabel: {
+                            display: false
+                        },
+                        gridLines: {
+                            display: false
+                        },
+                    }],
+                },
+
+                tooltips: {
+                    backgroundColor: '#333',
+                    titleFontSize: 13,
+                    titleFontColor: '#fff',
+                    bodyFontColor: '#fff',
+                    bodyFontSize: 13,
+                    displayColors: false,
+                    xPadding: 10,
+                    yPadding: 10,
+                    intersect: false
+                }
+            },
+        });
+    </script>
+}

@@ -1,0 +1,15 @@
+D:\VS\It_Legend\Bl\bin\Debug\net7.0\Bl.deps.json
+D:\VS\It_Legend\Bl\bin\Debug\net7.0\Bl.dll
+D:\VS\It_Legend\Bl\bin\Debug\net7.0\Bl.pdb
+D:\VS\It_Legend\Bl\bin\Debug\net7.0\Domains.dll
+D:\VS\It_Legend\Bl\bin\Debug\net7.0\Domains.pdb
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\Bl.csproj.AssemblyReference.cache
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\Bl.GeneratedMSBuildEditorConfig.editorconfig
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\Bl.AssemblyInfoInputs.cache
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\Bl.AssemblyInfo.cs
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\Bl.csproj.CoreCompileInputs.cache
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\Bl.csproj.CopyComplete
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\Bl.dll
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\refint\Bl.dll
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\Bl.pdb
+D:\VS\It_Legend\Bl\obj\Debug\net7.0\ref\Bl.dll

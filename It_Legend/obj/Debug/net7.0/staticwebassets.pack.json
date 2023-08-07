@@ -1,0 +1,1745 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\Uploads\\Images\\9477D386-BD3A-4533-A392-2EE499564CD1.png",
+      "PackagePath": "staticwebassets\\Uploads\\Images\\9477D386-BD3A-4533-A392-2EE499564CD1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\chosen.css",
+      "PackagePath": "staticwebassets\\css\\chosen.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\flaticon1.css",
+      "PackagePath": "staticwebassets\\css\\flaticon1.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\fontawesome-all.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome-all.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\icons.css",
+      "PackagePath": "staticwebassets\\css\\icons.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\images\\ui-icons_444444_256x240.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_444444_256x240.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\images\\ui-icons_555555_256x240.png",
+      "PackagePath": "staticwebassets\\css\\images\\ui-icons_555555_256x240.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\jquery.modal.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery.modal.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\line-awesome.css",
+      "PackagePath": "staticwebassets\\css\\line-awesome.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\mmenu.css",
+      "PackagePath": "staticwebassets\\css\\mmenu.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\owl.css",
+      "PackagePath": "staticwebassets\\css\\owl.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\css\\select2.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\.DS_Store",
+      "PackagePath": "staticwebassets\\fonts\\.DS_Store"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon1.eot",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon1.eot"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon1.svg",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon1.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon1.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon1.ttf"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon1.woff",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon1.woff"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\Flaticon1.woff2",
+      "PackagePath": "staticwebassets\\fonts\\Flaticon1.woff2"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\fonts\\_flaticon.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\flaticon.html",
+      "PackagePath": "staticwebassets\\fonts\\flaticon.html"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-brands-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.eot"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-brands-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-brands-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.woff"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\la-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-regular-400.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.eot"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-regular-400.svg",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-regular-400.woff",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.woff"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\la-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-solid-900.eot",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.eot"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-solid-900.svg",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-solid-900.woff",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.woff"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\la-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\la-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\fonts\\stylesheet.css",
+      "PackagePath": "staticwebassets\\fonts\\stylesheet.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\background\\1.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\3.png",
+      "PackagePath": "staticwebassets\\images\\background\\3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\5.png",
+      "PackagePath": "staticwebassets\\images\\background\\5.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\6.png",
+      "PackagePath": "staticwebassets\\images\\background\\6.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\about-us-banner.jpg",
+      "PackagePath": "staticwebassets\\images\\background\\about-us-banner.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\about-us-banner.png",
+      "PackagePath": "staticwebassets\\images\\background\\about-us-banner.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\home-banner.jpg",
+      "PackagePath": "staticwebassets\\images\\background\\home-banner.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\linebgoverlay-pricing.png",
+      "PackagePath": "staticwebassets\\images\\background\\linebgoverlay-pricing.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\maintenance.png",
+      "PackagePath": "staticwebassets\\images\\background\\maintenance.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\background\\online-recruitment-banner.jpg",
+      "PackagePath": "staticwebassets\\images\\background\\online-recruitment-banner.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\candidate\\LOGO-4.png",
+      "PackagePath": "staticwebassets\\images\\candidate\\LOGO-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\candidate\\candidate-user.png",
+      "PackagePath": "staticwebassets\\images\\candidate\\candidate-user.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (1).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (10).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (10).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (11).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (11).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (12).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (12).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (13).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (13).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (14).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (14).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (15).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (15).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (16).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (16).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (17).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (17).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (18).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (18).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (19).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (19).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (2).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (20).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (20).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (21).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (21).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (22).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (22).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (23).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (23).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (24).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (24).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (25).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (25).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (26).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (26).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (27).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (27).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (28).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (28).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (29).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (29).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (3).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (3).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (30).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (30).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (31).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (31).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (32).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (32).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (4).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (4).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (5).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (5).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (6).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (6).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (7).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (7).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (8).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (8).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\clients\\clients (9).jpeg",
+      "PackagePath": "staticwebassets\\images\\clients\\clients (9).jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\fancybox\\blank.gif",
+      "PackagePath": "staticwebassets\\images\\fancybox\\blank.gif"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\fancybox\\fancybox_loading.gif",
+      "PackagePath": "staticwebassets\\images\\fancybox\\fancybox_loading.gif"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\fancybox\\fancybox_loading@2x.gif",
+      "PackagePath": "staticwebassets\\images\\fancybox\\fancybox_loading@2x.gif"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\fancybox\\fancybox_overlay.png",
+      "PackagePath": "staticwebassets\\images\\fancybox\\fancybox_overlay.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\fancybox\\fancybox_sprite.png",
+      "PackagePath": "staticwebassets\\images\\fancybox\\fancybox_sprite.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\fancybox\\fancybox_sprite@2x.png",
+      "PackagePath": "staticwebassets\\images\\fancybox\\fancybox_sprite@2x.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\apple-2.png",
+      "PackagePath": "staticwebassets\\images\\icons\\apple-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\apple-light.png",
+      "PackagePath": "staticwebassets\\images\\icons\\apple-light.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\apple.png",
+      "PackagePath": "staticwebassets\\images\\icons\\apple.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\bg-1.png",
+      "PackagePath": "staticwebassets\\images\\icons\\bg-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\bg-2.png",
+      "PackagePath": "staticwebassets\\images\\icons\\bg-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\bg-3.png",
+      "PackagePath": "staticwebassets\\images\\icons\\bg-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\bg-4.png",
+      "PackagePath": "staticwebassets\\images\\icons\\bg-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\bg-5.png",
+      "PackagePath": "staticwebassets\\images\\icons\\bg-5.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\contact-map-marker.png",
+      "PackagePath": "staticwebassets\\images\\icons\\contact-map-marker.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\eor.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\eor.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\filter.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\filter.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\google-2.png",
+      "PackagePath": "staticwebassets\\images\\icons\\google-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\google-light.png",
+      "PackagePath": "staticwebassets\\images\\icons\\google-light.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\google.png",
+      "PackagePath": "staticwebassets\\images\\icons\\google.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\hr-consultant.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\hr-consultant.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-calendar.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-calendar.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-clock.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-clock.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-degree.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-degree.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-expiry.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-expiry.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-language.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-language.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-location.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-location.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-rate.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-rate.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-salary.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-salary.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-select.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-select.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-user-2.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-user-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-user-2.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-user-2.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\icon-user-3.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-user-3.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\letter.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\letter.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\manpower.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\manpower.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\map-marker.png",
+      "PackagePath": "staticwebassets\\images\\icons\\map-marker.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\paypal.png",
+      "PackagePath": "staticwebassets\\images\\icons\\paypal.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\placeholder.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\placeholder.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\preloader.gif",
+      "PackagePath": "staticwebassets\\images\\icons\\preloader.gif"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\preloader.png",
+      "PackagePath": "staticwebassets\\images\\icons\\preloader.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\preloader.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\preloader.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\quote-icon.png",
+      "PackagePath": "staticwebassets\\images\\icons\\quote-icon.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\requiment.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\requiment.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\select2.png",
+      "PackagePath": "staticwebassets\\images\\icons\\select2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\shape-1.png",
+      "PackagePath": "staticwebassets\\images\\icons\\shape-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\shape-2.png",
+      "PackagePath": "staticwebassets\\images\\icons\\shape-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\shape-3.png",
+      "PackagePath": "staticwebassets\\images\\icons\\shape-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\shape-4.png",
+      "PackagePath": "staticwebassets\\images\\icons\\shape-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\smartphone.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\smartphone.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\icons\\user.svg",
+      "PackagePath": "staticwebassets\\images\\icons\\user.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\logo-2.svg",
+      "PackagePath": "staticwebassets\\images\\logo-2.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\logo-3.svg",
+      "PackagePath": "staticwebassets\\images\\logo-3.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\logo-dark-blue.svg",
+      "PackagePath": "staticwebassets\\images\\logo-dark-blue.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\logo-green-light.svg",
+      "PackagePath": "staticwebassets\\images\\logo-green-light.svg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\logo-large.png",
+      "PackagePath": "staticwebassets\\images\\logo-large.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\main-logo.png",
+      "PackagePath": "staticwebassets\\images\\main-logo.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\Brainquil.png",
+      "PackagePath": "staticwebassets\\images\\resource\\Brainquil.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\EIGamal.jpg",
+      "PackagePath": "staticwebassets\\images\\resource\\EIGamal.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\Fawry.jpeg",
+      "PackagePath": "staticwebassets\\images\\resource\\Fawry.jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\IT-Legend.jpeg",
+      "PackagePath": "staticwebassets\\images\\resource\\IT-Legend.jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\Monginis.png",
+      "PackagePath": "staticwebassets\\images\\resource\\Monginis.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\ads-bg-4.png",
+      "PackagePath": "staticwebassets\\images\\resource\\ads-bg-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\1-1.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\1-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\1-2.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\1-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\1-3.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\1-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\1-4.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\1-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\1-5.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\1-5.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\1-6.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\1-6.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\1-7.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\1-7.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\1-8.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\1-8.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\1-9.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\1-9.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\2-1.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\2-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\2-2.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\2-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\2-3.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\2-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\2-4.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\2-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\2-5.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\2-5.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\2-6.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\2-6.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\2-7.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\2-7.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\2-8.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\2-8.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\2-9.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\2-9.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\3-1.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\3-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\3-2.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\3-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\3-3.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\3-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\3-4.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\3-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\3-5.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\3-5.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\3-6.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\3-6.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\3-7.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\3-7.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\3-8.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\3-8.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\4-1.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\4-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\4-2.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\4-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\4-3.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\4-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\4-4.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\4-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\4-5.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\4-5.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\5-1.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\5-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-1.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-10.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-10.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-11.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-11.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-12.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-12.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-2.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-3.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-4.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-5.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-5.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-6.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-6.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-7.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-7.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-8.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-8.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\company-logo\\6-9.png",
+      "PackagePath": "staticwebassets\\images\\resource\\company-logo\\6-9.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\go-to-work.png",
+      "PackagePath": "staticwebassets\\images\\resource\\go-to-work.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\joy.jpeg",
+      "PackagePath": "staticwebassets\\images\\resource\\joy.jpeg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\news-3-1.png",
+      "PackagePath": "staticwebassets\\images\\resource\\news-3-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\news-3-2.png",
+      "PackagePath": "staticwebassets\\images\\resource\\news-3-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\news-3-3.png",
+      "PackagePath": "staticwebassets\\images\\resource\\news-3-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\news-3-4.png",
+      "PackagePath": "staticwebassets\\images\\resource\\news-3-4.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\news-3-5.png",
+      "PackagePath": "staticwebassets\\images\\resource\\news-3-5.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\process-1.png",
+      "PackagePath": "staticwebassets\\images\\resource\\process-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\process-2.png",
+      "PackagePath": "staticwebassets\\images\\resource\\process-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\process-3.png",
+      "PackagePath": "staticwebassets\\images\\resource\\process-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\product01.png",
+      "PackagePath": "staticwebassets\\images\\resource\\product01.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\think.png",
+      "PackagePath": "staticwebassets\\images\\resource\\think.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\work-1.png",
+      "PackagePath": "staticwebassets\\images\\resource\\work-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\work-2.png",
+      "PackagePath": "staticwebassets\\images\\resource\\work-2.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\resource\\work-3.png",
+      "PackagePath": "staticwebassets\\images\\resource\\work-3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\Automotive.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\Automotive.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\CONSTRUCTION.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\CONSTRUCTION.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\Consumer.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\Consumer.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\E-commerce.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\E-commerce.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\Energy.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\Energy.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\Finance.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\Finance.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\HOSPITALITY.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\HOSPITALITY.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\Healthcare.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\Healthcare.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\Logistics.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\Logistics.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\about-us-section.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\about-us-section.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\avoid-hssla.png",
+      "PackagePath": "staticwebassets\\images\\section\\avoid-hssla.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\candiate-01.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\candiate-01.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\image-1.png",
+      "PackagePath": "staticwebassets\\images\\section\\image-1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\information-technology.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\information-technology.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\it-company.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\it-company.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\leading-insurance.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\leading-insurance.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\network.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\network.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\online-recruiting.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\online-recruiting.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\our-mission.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\our-mission.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\our-solution.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\our-solution.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\our-sourcy-online.png",
+      "PackagePath": "staticwebassets\\images\\section\\our-sourcy-online.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\our-values.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\our-values.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\our-vision.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\our-vision.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\oursourcy-helped.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\oursourcy-helped.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\out-sourcy-req.png",
+      "PackagePath": "staticwebassets\\images\\section\\out-sourcy-req.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\outsourcy-commerce.png",
+      "PackagePath": "staticwebassets\\images\\section\\outsourcy-commerce.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\priicing-mony.png",
+      "PackagePath": "staticwebassets\\images\\section\\priicing-mony.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\promote-youre.png",
+      "PackagePath": "staticwebassets\\images\\section\\promote-youre.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\req-quote.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\req-quote.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\save-mony.png",
+      "PackagePath": "staticwebassets\\images\\section\\save-mony.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\training.jpg",
+      "PackagePath": "staticwebassets\\images\\section\\training.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\images\\section\\vancy.png",
+      "PackagePath": "staticwebassets\\images\\section\\vancy.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\Helper.js",
+      "PackagePath": "staticwebassets\\js\\Helper.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\ScrollMagic.min.js",
+      "PackagePath": "staticwebassets\\js\\ScrollMagic.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\anm.min.js",
+      "PackagePath": "staticwebassets\\js\\anm.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\appear.js",
+      "PackagePath": "staticwebassets\\js\\appear.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\chart.min.js",
+      "PackagePath": "staticwebassets\\js\\chart.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\chosen.min.js",
+      "PackagePath": "staticwebassets\\js\\chosen.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\infobox.min.js",
+      "PackagePath": "staticwebassets\\js\\infobox.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\jquery.countdown.js",
+      "PackagePath": "staticwebassets\\js\\jquery.countdown.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\jquery.fancybox.js",
+      "PackagePath": "staticwebassets\\js\\jquery.fancybox.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\jquery.modal.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.modal.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\knob.js",
+      "PackagePath": "staticwebassets\\js\\knob.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\map-script.js",
+      "PackagePath": "staticwebassets\\js\\map-script.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\maps.js",
+      "PackagePath": "staticwebassets\\js\\maps.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\markerclusterer.js",
+      "PackagePath": "staticwebassets\\js\\markerclusterer.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\mmenu.js",
+      "PackagePath": "staticwebassets\\js\\mmenu.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\mmenu.polyfills.js",
+      "PackagePath": "staticwebassets\\js\\mmenu.polyfills.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\owl.js",
+      "PackagePath": "staticwebassets\\js\\owl.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\popper.min.js.map",
+      "PackagePath": "staticwebassets\\js\\popper.min.js.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\rellax.min.js",
+      "PackagePath": "staticwebassets\\js\\rellax.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\respond.js",
+      "PackagePath": "staticwebassets\\js\\respond.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\js\\select2.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\validate.js",
+      "PackagePath": "staticwebassets\\js\\validate.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\js\\wow.js",
+      "PackagePath": "staticwebassets\\js\\wow.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\.DS_Store",
+      "PackagePath": "staticwebassets\\sass\\.DS_Store"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\base\\base.scss",
+      "PackagePath": "staticwebassets\\sass\\base\\base.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\base\\forms.scss",
+      "PackagePath": "staticwebassets\\sass\\base\\forms.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\base\\responsive.scss",
+      "PackagePath": "staticwebassets\\sass\\base\\responsive.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\base\\typography.scss",
+      "PackagePath": "staticwebassets\\sass\\base\\typography.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\base\\utilities.scss",
+      "PackagePath": "staticwebassets\\sass\\base\\utilities.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\Callout.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\Callout.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\about.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\about.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\accordion.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\accordion.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\ads.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\ads.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\banner-box.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\banner-box.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\banner-section.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\banner-section.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\button.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\button.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\clients.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\clients.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\companies.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\companies.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\contact.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\contact.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\dashboard.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\dashboard.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\feature.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\feature.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\footer.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\footer.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\fun-fact.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\fun-fact.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\header.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\header.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\job-search.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\job-search.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\job.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\job.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\list.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\list.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\login.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\login.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\map.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\map.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\menu.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\menu.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\message-box.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\message-box.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\new\\index-11.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\new\\index-11.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\new\\index-12.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\new\\index-12.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\new\\index-13.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\new\\index-13.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\new\\index-14.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\new\\index-14.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\new\\index-15.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\new\\index-15.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\new\\index-16.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\new\\index-16.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\new\\index-17.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\new\\index-17.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\owl.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\owl.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\page-title.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\page-title.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\pie-graph.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\pie-graph.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\portfolio.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\portfolio.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\preloader.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\preloader.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\progress-bar.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\progress-bar.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\registr-banner.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\registr-banner.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\resume.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\resume.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\section-title.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\section-title.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\app.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\app.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\browse.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\browse.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\candidates.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\candidates.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\cta.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\cta.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\faq.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\faq.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\invoice.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\invoice.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\jobseeker.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\jobseeker.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\ls-section.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\ls-section.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\news.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\news.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\pricing.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\pricing.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\process.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\process.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\recruiter.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\recruiter.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\steps.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\steps.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\subscribe.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\subscribe.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sections\\tnc.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sections\\tnc.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\select.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\select.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\shame.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\shame.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\sidebar.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\sidebar.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\social.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\social.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\socialIcons.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\socialIcons.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\table.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\table.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\tabs.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\tabs.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\testimonials.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\testimonials.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\tooltip.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\tooltip.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\components\\uploadings.scss",
+      "PackagePath": "staticwebassets\\sass\\components\\uploadings.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\layout\\blog-sidebar.scss",
+      "PackagePath": "staticwebassets\\sass\\layout\\blog-sidebar.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\layout\\blog-single.scss",
+      "PackagePath": "staticwebassets\\sass\\layout\\blog-single.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\layout\\shop\\cart.scss",
+      "PackagePath": "staticwebassets\\sass\\layout\\shop\\cart.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\layout\\shop\\order.scss",
+      "PackagePath": "staticwebassets\\sass\\layout\\shop\\order.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\layout\\shop\\products.scss",
+      "PackagePath": "staticwebassets\\sass\\layout\\shop\\products.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\layout\\shop\\single.scss",
+      "PackagePath": "staticwebassets\\sass\\layout\\shop\\single.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\layout\\shop\\tabs.scss",
+      "PackagePath": "staticwebassets\\sass\\layout\\shop\\tabs.scss"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\sass\\main.scss",
+      "PackagePath": "staticwebassets\\sass\\main.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.It_Legend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.It_Legend.props",
+      "PackagePath": "build\\It_Legend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.It_Legend.props",
+      "PackagePath": "buildMultiTargeting\\It_Legend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.It_Legend.props",
+      "PackagePath": "buildTransitive\\It_Legend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
