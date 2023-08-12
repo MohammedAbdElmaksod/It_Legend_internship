@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<SuccessStories>
+@{
     Layout = "_layout";
 }
 <title>Success Stories - Outsourcy</title>
@@ -8,7 +9,7 @@
         <div class="title-outer">
             <h1>Success Stories</h1>
             <ul class="page-breadcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="/Home/Index">Home</a></li>
                 <li>Success Stories</li>
             </ul>
         </div>
@@ -20,94 +21,23 @@
     <div class="auto-container">
         <div class="row row-cols-1 row-cols-sm-12 row-cols-md-6 row-cols-lg-3 row-cols-xxl-3">
             <!--  Block -->
-            <div class="work-block  mb-2  col">
-                <div class="inner-box  py-4">
-                    <figure class="image"><img src="~/images/section/it-company.jpg" alt=""></figure>
-                    <h4 class="lh-sm">
-                        <a href="#" class="text-dark">
-                            How we have helped a large IT
-                            company
-                        </a>
-                    </h4>
-                    <p class="text-start mt-3">
-                        We are proud to share the success of our latest recruitment
-                        campaign for one of our clients! Our team worked hard to
-                        help them find the perfect candidates and we couldn’t be happier with the outcome.
-                    </p>
+            @foreach (var story in Model)
+            {
+                <div class="work-block  mb-2  col">
+                    <div class="inner-box  py-4">
+                        <figure class="image"><img src="@string.Format("/Uploads/Images/{0}",story.imgUrl)" alt=""></figure>
+                        <h4 class="lh-sm">
+                            <a href="#" class="text-dark">
+                              @story.title
+                            </a>
+                        </h4>
+                        <p class="text-start mt-3">
+                            @story.shortDescription
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <!--  Block -->
-            <div class="work-block  mb-2  col">
-                <div class="inner-box  py-4">
-                    <figure class="image"><img src="~/images/section/oursourcy-helped.jpg" alt=""></figure>
-                    <h4 class="lh-sm">
-                        <a href="#" class="text-dark">
-                            How OUTSOURCY Helped A Large Oil and Gas
-                            Organization
-                        </a>
-                    </h4>
-                    <p class="text-start mt-3">
-                        We are proud to have helped a large organization in the oil
-                        and gas industry hire and outsource approximately 4000
-                        employees in different positions across Egypt. Our team at OUTSOURCY was responsible
-                        for the full hiring cycle….
-                    </p>
-                </div>
-            </div>
-            <!--  Block -->
-            <div class="work-block  mb-2  col">
-                <div class="inner-box  py-4">
-                    <figure class="image"><img src="~/images/section/outsourcy-commerce.png" alt=""></figure>
-                    <h4 class="lh-sm">
-                        <a href="#" class="text-dark">
-                            How OUTSOURCY Helped A Leading
-                            E-commerce and Distribution Platform
-                        </a>
-                    </h4>
-                    <p class="text-start mt-3">
-                        At OUTSOURCY, we understand how important it is for
-                        businesses to hire the right people. That’s why we were thrilled
-                        when a leading organization in the E-commerce and distribution platform approached
-                        us with their volume manpower
-                        outsourcing needs.
-                    </p>
-                </div>
-            </div>
-            <!--  Block -->
-            <div class="work-block  mb-2  col">
-                <div class="inner-box  py-4">
-                    <figure class="image"><img src="~/images/section/vancy.png" alt=""></figure>
-                    <h4 class="lh-sm">
-                        <a href="#" class="text-dark">
-                            How have we helped A leading F&B
-                            firm
-                        </a>
-                    </h4>
-                    <p class="text-start mt-3">
-                        Objective: Our client wanted to hire multiple positions
-                        (White & blue callers)
-                    </p>
-                </div>
-            </div>
-            <!--  Block -->
-            <div class="work-block  mb-2 col">
-                <div class="inner-box  py-4">
-                    <figure class="image"><img src="~/images/section/leading-insurance.jpg" alt=""></figure>
-                    <h4 class="lh-sm">
-                        <a href="#" class="text-dark">
-                            How OUTSOURCY Helped a Leading Insurance
-                            Firm
-                        </a>
-                    </h4>
-                    <p class="text-start mt-3">
-                        At OUTSOURCY, we understand how important it is for
-                        businesses to hire the right people. That’s why we were thrilled
-                        when a leading organization in the E-commerce and distribution platform approached
-                        us with their volume manpower
-                        outsourcing needs.
-                    </p>
-                </div>
-            </div>
+            }
+
 
         </div>
     </div>

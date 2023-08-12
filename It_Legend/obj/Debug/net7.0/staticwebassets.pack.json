@@ -1,8 +1,40 @@
 {
   "Files": [
     {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\EmailTemplates\\BodyAfterRegister.html",
+      "PackagePath": "staticwebassets\\EmailTemplates\\BodyAfterRegister.html"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\EmailTemplates\\Footer.html",
+      "PackagePath": "staticwebassets\\EmailTemplates\\Footer.html"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\EmailTemplates\\Header.html",
+      "PackagePath": "staticwebassets\\EmailTemplates\\Header.html"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\EmailTemplates\\account_message.html",
+      "PackagePath": "staticwebassets\\EmailTemplates\\account_message.html"
+    },
+    {
       "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\Uploads\\Images\\9477D386-BD3A-4533-A392-2EE499564CD1.png",
       "PackagePath": "staticwebassets\\Uploads\\Images\\9477D386-BD3A-4533-A392-2EE499564CD1.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\Uploads\\Images\\AFA7D67A-85A6-46A3-BCAF-87427254A4A3.png",
+      "PackagePath": "staticwebassets\\Uploads\\Images\\AFA7D67A-85A6-46A3-BCAF-87427254A4A3.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\Uploads\\Images\\D145B971-99D2-4540-8E4B-085B5C43394D.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\Images\\D145B971-99D2-4540-8E4B-085B5C43394D.jpg"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\Uploads\\Images\\D40F0AEF-FF7F-462B-86D3-64ACC918E8F6.png",
+      "PackagePath": "staticwebassets\\Uploads\\Images\\D40F0AEF-FF7F-462B-86D3-64ACC918E8F6.png"
+    },
+    {
+      "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\Uploads\\Images\\DAADE59C-81A1-4C25-9FCD-C43646D54CD4.png",
+      "PackagePath": "staticwebassets\\Uploads\\Images\\DAADE59C-81A1-4C25-9FCD-C43646D54CD4.png"
     },
     {
       "Id": "D:\\VS\\It_Legend\\It_Legend\\wwwroot\\css\\animate.css",

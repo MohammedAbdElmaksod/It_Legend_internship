@@ -1,7 +1,9 @@
 using Bl;
 using Bl.Data;
+using Castle.Core.Smtp;
 using Domains;
 using It_Legend.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -20,6 +22,10 @@ namespace It_Legend
             builder.Services.AddScoped<IService<Categories>, CategoryServices>();
             builder.Services.AddScoped<IService<Candidates>, Candidateservice>();
             builder.Services.AddScoped<IEployeeService, EmployeeService>();
+            builder.Services.AddScoped<IBlogService, BlogService>();
+            builder.Services.AddScoped<ISuccessStoriesService,SuccessStoriesService>();
+            builder.Services.AddScoped<IEmailSenderr,EmailSender>();
+            builder.Services.AddScoped<IEmailTempalte,EmailTemplate>();
             builder.Services.AddDbContext<ApplicationDbContext>
                 (options => options.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection")));
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options=>
@@ -30,6 +36,16 @@ namespace It_Legend
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireLowercase = false;
             }).AddEntityFrameworkStores<ApplicationDbContext>();
+            builder.Services.ConfigureApplicationCookie(options =>
+            {
+                options.AccessDeniedPath = "/Users/AccessDenied";
+                options.LoginPath = "/Users/Login";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(200);
+                options.ReturnUrlParameter = CookieAuthenticationDefaults.ReturnUrlParameter;
+                options.Cookie.Name = "Cookie";
+                options.Cookie.HttpOnly = true;
+                options.SlidingExpiration = true;
+            });
             //register autoMapper
             builder.Services.AddAutoMapper(Assembly.GetAssembly(typeof(MappingProfile)));
             Assembly[] oMapperProfile =

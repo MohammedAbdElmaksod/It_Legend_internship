@@ -1,4 +1,6 @@
-﻿namespace Domains
+﻿using Domains.Domains;
+
+namespace Domains
 {
     public class Candidates : Base
     {
@@ -22,5 +24,6 @@
         public virtual Categories? Categories { get; set; }
         public virtual List<Jobs>? jobs { get; set; }
         public virtual SocialMedia? SocialMedia { get; set; }
+        public virtual List<Blogs>? Blogs { get; set; }
     }
 }

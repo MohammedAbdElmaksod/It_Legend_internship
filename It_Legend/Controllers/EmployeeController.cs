@@ -1,4 +1,5 @@
 ﻿using Bl;
+using Bl.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace It_Legend.Controllers
@@ -7,7 +8,7 @@ namespace It_Legend.Controllers
     {
         private readonly IEployeeService _employee;
 
-        public EmployeeController(IEployeeService employee)
+        public EmployeeController(IEployeeService employee, ApplicationDbContext context)
         {
             _employee = employee;
         }

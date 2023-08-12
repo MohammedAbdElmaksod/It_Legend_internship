@@ -228,6 +228,56 @@ namespace Bl.Migrations
                     b.ToTable("TbCategory");
                 });
 
+            modelBuilder.Entity("Domains.Domains.Blogs", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CandidateId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CommentCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("CurrentState")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("employeeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("imgUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("shortDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CandidateId");
+
+                    b.HasIndex("employeeId");
+
+                    b.ToTable("TbBlogs");
+                });
+
             modelBuilder.Entity("Domains.Domains.CompanyCategories", b =>
                 {
                     b.Property<int>("Id")
@@ -381,6 +431,46 @@ namespace Bl.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("TbJobType");
+                });
+
+            modelBuilder.Entity("Domains.Domains.SuccessStories", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("CurrentState")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("imgUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("longDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("shortDescription")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TbSuccessStories");
                 });
 
             modelBuilder.Entity("Domains.Employees", b =>
@@ -770,6 +860,21 @@ namespace Bl.Migrations
                     b.Navigation("SocialMedia");
                 });
 
+            modelBuilder.Entity("Domains.Domains.Blogs", b =>
+                {
+                    b.HasOne("Domains.Candidates", "Candidate")
+                        .WithMany("Blogs")
+                        .HasForeignKey("CandidateId");
+
+                    b.HasOne("Domains.Employees", "Employee")
+                        .WithMany("Blogs")
+                        .HasForeignKey("employeeId");
+
+                    b.Navigation("Candidate");
+
+                    b.Navigation("Employee");
+                });
+
             modelBuilder.Entity("Domains.Employees", b =>
                 {
                     b.HasOne("Domains.Categories", "Categories")
@@ -887,6 +992,8 @@ namespace Bl.Migrations
 
             modelBuilder.Entity("Domains.Candidates", b =>
                 {
+                    b.Navigation("Blogs");
+
                     b.Navigation("jobs");
                 });
 
@@ -922,6 +1029,11 @@ namespace Bl.Migrations
             modelBuilder.Entity("Domains.Domains.JobType", b =>
                 {
                     b.Navigation("jobs");
+                });
+
+            modelBuilder.Entity("Domains.Employees", b =>
+                {
+                    b.Navigation("Blogs");
                 });
 
             modelBuilder.Entity("Domains.Jobs", b =>

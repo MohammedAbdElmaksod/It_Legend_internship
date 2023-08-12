@@ -23,6 +23,8 @@ namespace Bl.Data
         public virtual DbSet<JobType> TbJobType { get; set; }
         public virtual DbSet<JobPrivacey> TbJobPrivacey { get; set; }
         public virtual DbSet<JobStatus> TbJobStatus { get; set; }
+        public virtual DbSet<Blogs> TbBlogs { get; set; }
+        public virtual DbSet<SuccessStories> TbSuccessStories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

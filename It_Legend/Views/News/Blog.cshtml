@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Blogs>
+@{
     Layout = "_layout";
 }
 <title>Blog - Outsourcy</title>
@@ -8,7 +9,7 @@
         <div class="title-outer">
             <h1>Blog</h1>
             <ul class="page-breadcrumb">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="Home/Index">Home</a></li>
                 <li>Blog</li>
             </ul>
         </div>
@@ -24,131 +25,28 @@
                 <div class="blog-grid">
                     <div class="row">
                         <!-- News Block -->
-                        <div class="news-block col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="~/images/resource/news-3-1.png" alt="" /></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <ul class="post-meta">
-                                        <li><a href="#">July 1, 2023</a></li>
-                                        <li><a href="#">12 Comment</a></li>
-                                    </ul>
-                                    <h3><a href="blog-single.html">Attract Sales And Profits</a></h3>
-                                    <p class="text">
-                                        A job ravenously while Far much that one rank beheld after
-                                        outside....
-                                    </p>
-                                    <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- News Block -->
-                        <div class="news-block col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="~/images/resource/news-3-2.png" alt="" /></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <ul class="post-meta">
-                                        <li><a href="#">July 1, 2023</a></li>
-                                        <li><a href="#">12 Comment</a></li>
-                                    </ul>
-                                    <h3><a href="blog-single.html">5 Tips For Your Job Interviews</a></h3>
-                                    <p class="text">
-                                        A job ravenously while Far much that one rank beheld after
-                                        outside....
-                                    </p>
-                                    <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
+                        @foreach (var blog in Model)
+                        {
+                            <div class="news-block col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="@string.Format("/Uploads/Images/{0}",blog.imgUrl)" alt="" /></figure>
+                                    </div>
+                                    <div class="lower-content">
+                                        <ul class="post-meta">
+                                            <li>@blog.CreatedDate?.ToString("MMM d, yyyy")</li>
+                                            <li><a href="#">@blog.CommentCount Comment</a></li>
+                                        </ul>
+                                        <h3><a href="blog-single.html">@blog.title</a></h3>
+                                        <p class="text">
+                                            @blog.shortDescription
+                                        </p>
+                                        <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- News Block -->
-                        <div class="news-block col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="~/images/resource/news-3-3.png" alt="" /></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <ul class="post-meta">
-                                        <li><a href="#">July 1, 2023</a></li>
-                                        <li><a href="#">12 Comment</a></li>
-                                    </ul>
-                                    <h3><a href="blog-single.html">An Overworked Newspaper Editor</a></h3>
-                                    <p class="text">
-                                        A job ravenously while Far much that one rank beheld after
-                                        outside....
-                                    </p>
-                                    <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- News Block -->
-                        <div class="news-block col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="~/images/resource/news-3-4.png" alt="" /></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <ul class="post-meta">
-                                        <li><a href="#">July 1, 2023</a></li>
-                                        <li><a href="#">12 Comment</a></li>
-                                    </ul>
-                                    <h3><a href="blog-single.html">Attract Sales And Profits</a></h3>
-                                    <p class="text">
-                                        A job ravenously while Far much that one rank beheld after
-                                        outside....
-                                    </p>
-                                    <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- News Block -->
-                        <div class="news-block col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="~/images/resource/news-3-5.png" alt="" /></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <ul class="post-meta">
-                                        <li><a href="#">July 1, 2023</a></li>
-                                        <li><a href="#">12 Comment</a></li>
-                                    </ul>
-                                    <h3><a href="blog-single.html">5 Tips For Your Job Interviews</a></h3>
-                                    <p class="text">
-                                        A job ravenously while Far much that one rank beheld after
-                                        outside....
-                                    </p>
-                                    <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- News Block -->
-                        <div class="news-block col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image-box">
-                                    <figure class="image"><img src="~/images/resource/news-3-5.png" alt="" /></figure>
-                                </div>
-                                <div class="lower-content">
-                                    <ul class="post-meta">
-                                        <li><a href="#">July 1, 2023</a></li>
-                                        <li><a href="#">12 Comment</a></li>
-                                    </ul>
-                                    <h3><a href="blog-single.html">An Overworked Newspaper Editor</a></h3>
-                                    <p class="text">
-                                        A job ravenously while Far much that one rank beheld after
-                                        outside....
-                                    </p>
-                                    <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
+                        }
                     </div>
 
                     <!-- Pagination -->
@@ -207,35 +105,29 @@
                         </div>
 
                         <div class="widget-content">
-                            <article class="post">
-                                <div class="post-thumb">
-                                    <a href="blog-single.html">
-                                        <img src="~/images/resource/news-3-1.png" alt="">
-                                    </a>
-                                </div>
-                                <h6><a href="blog-single.html">Attract Sales And Profits</a></h6>
-                                <div class="post-info">July 1, 2023</div>
-                            </article>
+                            @{
+                                int i = 0;
+                                foreach (var blog in Model)
+                                {
 
-                            <article class="post">
-                                <div class="post-thumb">
-                                    <a href="blog-single.html">
-                                        <img src="~/images/resource/news-3-2.png" alt="">
-                                    </a>
-                                </div>
-                                <h6><a href="blog-single.html">5 Tips For Your Job Interviews</a></h6>
-                                <div class="post-info">July 1, 2023</div>
-                            </article>
+                                    if (blog.CreatedDate.Value.Day == DateTime.Now.Day || blog.CreatedDate.Value.Day == DateTime.Now.Day - 2 && i<=2)
+                                    {
 
-                            <article class="post">
-                                <div class="post-thumb">
-                                    <a href="blog-single.html">
-                                        <img src="~/images/resource/news-3-3.png" alt="">
-                                    </a>
-                                </div>
-                                <h6><a href="blog-single.html">The Best Account Providers</a></h6>
-                                <div class="post-info">July 1, 2023</div>
-                            </article>
+                                        <article class="post">
+                                            <div class="post-thumb">
+                                                <a href="blog-single.html">
+                                                    <img src="@string.Format("/Uploads/Images/{0}",blog.imgUrl)" alt="">
+                                                </a>
+                                            </div>
+                                            <h6><a href="blog-single.html">@blog.title</a></h6>
+                                            <div class="post-info">@blog?.CreatedDate.Value.ToString("MMM dd, yyyy") : </div>
+                                        </article>
+                                    }
+                                    i++;
+                                }
+                            }
+
+
                         </div>
                     </div>
                 </aside>

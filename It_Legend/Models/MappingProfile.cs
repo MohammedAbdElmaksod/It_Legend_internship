@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Bl.Data;
 using Domains;
+using Domains.Domains;
 using Domains.ViewModels;
 
 namespace It_Legend.Models

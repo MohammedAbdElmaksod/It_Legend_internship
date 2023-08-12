@@ -1,4 +1,6 @@
-﻿
+﻿@using System.Security.Claims;
+@using Microsoft.AspNetCore.Mvc.Razor;
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -150,12 +152,22 @@
                     <div class="outer-box">
                         <!-- Login/Register -->
                         <div class="btn-box">
-                            @if (manger.IsSignedIn(User))
+                            @if (User.Identity.Name != null && User.IsInRole("Candidate"))
                             {
-                               <p >Hi @User.Identity?.Name</p> 
+                                <div class="dropdown dashboard-option">
+                                    <a asp-controller="Candidate" asp-action="CandidateProfile" asp-route-id="@manger.UserManager.GetUserId(User)"
+                                       class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+                                        <img src="~/images/candidate/candidate-user.png" alt="avatar" class="thumb">
+                                        <span class="name">My Account</span>
+                                    </a>
+
+                                    <a class="m-2 btn-sm btn-secondary" asp-controller="Users" asp-action="Logout">LogOut</a>
+
+                                </div>
                             }
-                            else{
-                            <a type="button" class="theme-btn btn-style-three" asp-action="Login"asp-controller="Users">Login / Register</a>
+                            else
+                            {
+                                <a type="button" class="theme-btn btn-style-three" asp-action="Login" asp-controller="Users">Login / Register</a>
                             }
                             <a asp-controller="Job" asp-action="JobSubscribe" class="theme-btn btn-style-one"><span class="btn-title">Get your FREE trial</span></a>
                             <a href="#" class="theme-btn btn-sm  btn-style-one w-auto " style="min-width: unset;">
@@ -203,6 +215,9 @@
             <div id="nav-mobile"></div>
         </header>
         <!--End Main Header -->
+        <br />
+        <br />
+        <br />
         @RenderBody()
 
 
@@ -328,8 +343,8 @@
         </a>
     </div>
     <!-- partial -->
-    
-    
+
+
     <script src="~/js/jquery.js"></script>
     <script src="~/js/popper.min.js"></script>
     @RenderSection("Scripts",false)
@@ -347,24 +362,24 @@
     <script src="~/js/wow.js"></script>
     <script src="~/js/script.js"></script>
     <script src="~/js/helper.js"></script>
-  @*  <script>
-        function login() {
-            debugger
-            alert("from function")
-            var model={
-                fullName: $("#email").val,
-                password: $("#password").val,
-                confirmPassword: $("#confirmPassword").val,
-                phoneNumber: $("#phone").val,
-                company: $("#company").val
-            }
-            Helper.AjaxCallPost("/api/Users/RegisterAsEmployeer", JSON.stringify(model), function (data) {
-                alert(data);
-            },
-                function () {
-                    alert("faild");
-                })
-        }
+    @*  <script>
+    function login() {
+    debugger
+    alert("from function")
+    var model={
+    fullName: $("#email").val,
+    password: $("#password").val,
+    confirmPassword: $("#confirmPassword").val,
+    phoneNumber: $("#phone").val,
+    company: $("#company").val
+    }
+    Helper.AjaxCallPost("/api/Users/RegisterAsEmployeer", JSON.stringify(model), function (data) {
+    alert(data);
+    },
+    function () {
+    alert("faild");
+    })
+    }
     </script>*@
 </body>
 
