@@ -22,8 +22,8 @@ namespace Bl
 
         public void SendEmailAsync(string email, string subject, string htmlMessage)
         {
-            var fromMail = "m0hamed771@outlook.com";
-            var mailPass = "mido12345677";
+            var fromMail = "Your email (outlook account)";  
+            var mailPass = "Your password"; 
 
 
 
