@@ -14,7 +14,8 @@ namespace It_Legend.Models
         public string? ConfirmPassword { get; set; }
         public string? PhoneNumber { get; set; }
         [Required(ErrorMessage ="you should accept our Terms to signup")]
-        public bool? AcceptedTerms { get; set; } = false;
+        public bool Check { get; set; } = false;
         public string? returnUrl { get; set; }
+
     }
 }

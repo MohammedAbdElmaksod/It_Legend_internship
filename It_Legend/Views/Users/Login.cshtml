@@ -1,7 +1,7 @@
-﻿@{
+﻿@model userModel
+@{
     Layout = "_layout";
 }
-@model userModel
 <title>Login</title>
 <!-- Modal Login -->
 <br />
@@ -34,10 +34,10 @@
                             <div class="form-group">
                                 <div class="field-outer">
                                     <div class="input-group checkboxes square">
-                                        <input type="checkbox" name="remember-me" value="" id="remember">
+                                        <input type="checkbox" id="remember" asp-for="Check">
                                         <label for="remember" class="remember"><span class="custom-checkbox"></span> Keep me signed in</label>
                                     </div>
-                                    <a href="#" class="pwd">Forgot password?</a>
+                                    <a asp-controller="Users" asp-action="ChangePassword" class="pwd">Forgot password?</a>
                                 </div>
                             </div>
 

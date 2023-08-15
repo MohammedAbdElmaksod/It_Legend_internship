@@ -28,6 +28,12 @@ namespace Bl
             return _context.TbCandidates.ToList();
         }
 
+        public List<Candidates> GetAll(int pageNum,int pageSize)
+        {
+            return _context.TbCandidates.Skip(pageNum * pageSize - pageSize).Take(pageSize).ToList();
+
+        }
+
         public List<Candidates> GetByCategory(int catId)
         {
             return _context.TbCandidates.Where(c=>c.categoryId== catId).ToList();
@@ -41,6 +47,11 @@ namespace Bl
         public List<Candidates> GetRelatedJobs(int KindId)
         {
             throw new NotImplementedException();
+        }
+
+        public int totalCount()
+        {
+            return _context.TbCandidates.Count();
         }
     }
 }

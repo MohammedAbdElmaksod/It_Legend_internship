@@ -37,7 +37,7 @@ namespace It_Legend.Controllers
                 ModelState.AddModelError("Email", "This E-mail is not Exist");
                 return View(loginUser);
             }
-            var result = await _signInManager.PasswordSignInAsync(loginUser.Email, loginUser.Password,true,false);
+            var result = await _signInManager.PasswordSignInAsync(loginUser.Email, loginUser.Password, loginUser.Check,false);
             if (loginUser.returnUrl.IsNullOrEmpty())
                 loginUser.returnUrl = "~/";
             if (result.Succeeded)
@@ -74,9 +74,9 @@ namespace It_Legend.Controllers
                     ModelState.AddModelError("Password", "Enter at least 8 length");
                     return View(RegisterdUser);
                 }
-                if(!(bool)RegisterdUser.AcceptedTerms)
+                if(!RegisterdUser.Check)
                 {
-                    ModelState.AddModelError("AcceptedTerms", "you should accept our terms to signup");
+                    ModelState.AddModelError("Check", "you should accept our terms to signup");
                     return View(RegisterdUser);
                 }
                 var result = await _userManger.CreateAsync(user, RegisterdUser.Password);
@@ -121,6 +121,10 @@ namespace It_Legend.Controllers
             return Redirect("~/");
         }
         public IActionResult AccessDenied()
+        {
+            return View();
+        }
+        public IActionResult ChangePassword()
         {
             return View();
         }

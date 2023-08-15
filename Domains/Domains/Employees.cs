@@ -9,7 +9,7 @@ namespace Domains
         public string? email { get; set; }
         public string? phoneNumber { get; set; }
         public string? imgUrl { get; set; }
-        public string? userId { get; set; } = null!;
+        public string? userId { get; set; }
         public DateTime? foundedDate { get; set; }
         public string? location { get; set; }
         public string? businessEmail { get; set; }
@@ -25,5 +25,6 @@ namespace Domains
         public virtual Jobs? Jobs { get; set; }
         public virtual CompanyCategories? companyCategories { get; set; }
         public virtual List<Blogs>? Blogs { get; set; }
+        public virtual List<Contact>? Contacts { get; set; }
     }
 }

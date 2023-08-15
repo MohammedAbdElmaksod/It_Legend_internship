@@ -25,5 +25,7 @@ namespace Domains
         public virtual List<Jobs>? jobs { get; set; }
         public virtual SocialMedia? SocialMedia { get; set; }
         public virtual List<Blogs>? Blogs { get; set; }
+        public virtual List<Contact>? Contacts { get; set; }
+
     }
 }

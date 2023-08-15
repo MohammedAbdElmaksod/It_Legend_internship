@@ -16,6 +16,9 @@ namespace It_Legend.Models
                 .ForMember(c => c.userId, u => u.MapFrom(u => u.Id));
             CreateMap<Employees, ApplicationUser>().ReverseMap()
                 .ForMember(e => e.userId, u => u.MapFrom(u => u.Id));
+            CreateMap<Employees, EmployeeVm>().ReverseMap().
+                ForMember(f => f.fullName, c => c.MapFrom(c => c.companyName)).
+                ForMember(i => i.imgUrl, l => l.MapFrom(l => l.logoUrl));
         }
     }
 }

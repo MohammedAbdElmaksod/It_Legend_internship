@@ -1,6 +1,4 @@
 ﻿@model JobsWithRlated
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-
 @{
     Layout = "_layout";
 }
@@ -35,7 +33,7 @@
                             <p class="mb-2">Application ends: <span class="text-danger">@Model.ExpirationDate.Date.ToString("dd/MM/yyyy")</span></p>
                         </div>
                         <div class="w-100">
-                            <a href="#" class="theme-btn btn-style-one">Apply For Job</a>
+                            <a  class="theme-btn btn-style-one" >Apply For Job</a>
                             <button class="bookmark-btn"><i class="flaticon-bookmark"></i></button>
                         </div>
                     </div>

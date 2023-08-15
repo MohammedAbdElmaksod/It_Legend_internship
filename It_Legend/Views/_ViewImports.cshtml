@@ -4,5 +4,8 @@
 @using Domains.Domains;
 @using Domains.ViewModels
 @using Bl.Data;
+@using cloudscribe.Pagination.Models;
+import swal from 'sweetalert';
 @inject Microsoft.AspNetCore.Identity.SignInManager<ApplicationUser> manger
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, cloudscribe.Web.Pagination

@@ -1,4 +1,4 @@
-﻿@model List<Employees>
+﻿@model PagedResult<Employees>
 @{
     Layout = "_layout";
 }
@@ -104,7 +104,7 @@
 
                     <div class="row">
                         <!-- Company Block Four -->
-                        @foreach (var emp in Model)
+                        @foreach (var emp in Model.Data)
                         {
                             <div class="company-block-four col-xl-4 col-lg-6 col-md-6 col-sm-12">
                                 <div class="inner-box">
@@ -114,7 +114,7 @@
                                         <img src="@string.Format("/Uploads/Images/{0}",emp.imgUrl)"
                                              alt="">
                                     </span>
-                                    <h4><a asp-controller="Employee" asp-action="EmployerDescrioption" asp-route-id="@emp.Id">@emp.fullName</a></h4>
+                                    <h4><a asp-controller="Employee" asp-action="EmployerDescrioption" asp-route-id="@emp.userId">@emp.fullName</a></h4>
                                     <ul class="job-info">
                                         <li><span class="icon flaticon-map-locator"></span>@emp.location</li>
                                         <li><span class="icon flaticon-briefcase"></span> Accounting </li>
@@ -127,13 +127,14 @@
 
                     <!-- Pagination -->
                     <nav class="ls-pagination">
-                        <ul>
-                            <li class="prev"><a href="#"><i class="fa fa-arrow-left"></i></a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#" class="current-page">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li class="next"><a href="#"><i class="fa fa-arrow-right"></i></a></li>
-                        </ul>
+                        <cs-pager cs-paging-pagesize="@Model.PageSize"
+                                  cs-paging-pagenumber="@Model.PageNumber"
+                                  cs-paging-totalitems="@Model.TotalItems"
+                                  asp-controller="Employee"
+                                  asp-action="Employers"
+                                  cs-pager-li-current-class="current-page"
+                                  cs-pager-link-current-class="current-page">
+                        </cs-pager>
                     </nav>
                 </div>
             </div>

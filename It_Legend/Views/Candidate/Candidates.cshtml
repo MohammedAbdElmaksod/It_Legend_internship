@@ -1,4 +1,4 @@
-﻿@model List<Candidates>
+﻿@model PagedResult<Candidates>
 @{
     Layout = "_layout";
 }
@@ -250,7 +250,7 @@
 
                     <!-- Candidate block three -->
                     <!-- Ready to Work -->
-                    @foreach (var candidate in Model)
+                    @foreach (var candidate in Model.Data)
                     {
                         <div class="candidate-block-three">
                             <div class="inner-box">
@@ -273,7 +273,7 @@
                                 </div>
                                 <div class="btn-box">
                                     <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
-                                    <a asp-controller="Candidate" asp-action="CandidateProfile" asp-route-id="@candidate.Id"
+                                    <a asp-controller="Candidate" asp-action="CandidateProfile" asp-route-id="@candidate.userId"
                                        class="theme-btn btn-style-three"><span class="btn-title">View Profile</span></a>
                                 </div>
                             </div>
@@ -285,13 +285,14 @@
 
                     <!-- Pagination -->
                     <nav class="ls-pagination">
-                        <ul>
-                            <li class="prev"><a href="#"><i class="fa fa-arrow-left"></i></a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#" class="current-page">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li class="next"><a href="#"><i class="fa fa-arrow-right"></i></a></li>
-                        </ul>
+                        <cs-pager cs-paging-pagesize="@Model.PageSize"
+                                  cs-paging-pagenumber="@Model.PageNumber"
+                                  cs-paging-totalitems="@Model.TotalItems"
+                                  asp-controller="Candidate"
+                                  asp-action="Candidates"
+                                  cs-pager-li-current-class="current-page"
+                                  cs-pager-link-current-class="current-page">
+                        </cs-pager>
                     </nav>
                 </div>
             </div>

@@ -1,4 +1,6 @@
-﻿using It_Legend.Models;
+﻿using Bl;
+using Domains;
+using It_Legend.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,16 +8,16 @@ namespace It_Legend.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IService<Jobs> _jobService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IService<Jobs> jobService)
         {
-            _logger = logger;
+            _jobService = jobService;
         }
 
         public IActionResult Index()
         {
-            return View();
+            return View(_jobService.GetAll());
         }
        
 

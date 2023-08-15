@@ -11,6 +11,8 @@ namespace Bl
     {
         List<Employees> GetAllEmployees();
         Employees GetEmployeeById(int id);
-        Task<Employees> AddEmployee(Employees employee);
+        Task EditEmployee(Employees employee);
+        List<Employees> GetAll(int pageNum, int pageSize);
+        int totalCount();
     }
 }

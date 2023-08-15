@@ -152,10 +152,23 @@
                     <div class="outer-box">
                         <!-- Login/Register -->
                         <div class="btn-box">
-                            @if (User.Identity.Name != null && User.IsInRole("Candidate"))
+                            @if (User?.Identity?.Name != null && User.IsInRole("Candidate"))
                             {
                                 <div class="dropdown dashboard-option">
                                     <a asp-controller="Candidate" asp-action="CandidateProfile" asp-route-id="@manger.UserManager.GetUserId(User)"
+                                       class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+                                        <img src="~/images/candidate/candidate-user.png" alt="avatar" class="thumb">
+                                        <span class="name">My Account</span>
+                                    </a>
+
+                                    <a class="m-2 btn-sm btn-secondary" asp-controller="Users" asp-action="Logout">LogOut</a>
+
+                                </div>
+                            }
+                            else if (User?.Identity?.Name != null && User.IsInRole("Employeer"))
+                            {
+                                <div class="dropdown dashboard-option">
+                                    <a asp-controller="Employee" asp-action="EmployerDescrioption" asp-route-id="@manger.UserManager.GetUserId(User)"
                                        class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
                                         <img src="~/images/candidate/candidate-user.png" alt="avatar" class="thumb">
                                         <span class="name">My Account</span>
@@ -210,7 +223,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- Mobile Nav -->
             <div id="nav-mobile"></div>
         </header>
@@ -362,6 +374,9 @@
     <script src="~/js/wow.js"></script>
     <script src="~/js/script.js"></script>
     <script src="~/js/helper.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    @RenderSection("sweetAlert",false)
+
     @*  <script>
     function login() {
     debugger

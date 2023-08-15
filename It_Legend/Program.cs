@@ -28,6 +28,7 @@ namespace It_Legend
             builder.Services.AddScoped<IEmailTempalte,EmailTemplate>();
             builder.Services.AddDbContext<ApplicationDbContext>
                 (options => options.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("defaultConnection")));
+            builder.Services.AddCloudscribePagination();
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options=>
             {
                 options.Password.RequiredLength = 8;

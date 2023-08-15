@@ -1,13 +1,12 @@
 ﻿using Bl;
-using Bl.Data;
+using cloudscribe.Pagination.Models;
 using Domains;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace It_Legend.Controllers
 {
-    public class CandidateController :Controller
+    public class CandidateController : Controller
     {
         private readonly IService<Candidates> _candidate;
         private readonly IService<Categories> _category;
@@ -18,9 +17,16 @@ namespace It_Legend.Controllers
             _category = category;
         }
 
-        public IActionResult Candidates()
+        public IActionResult Candidates(int pageNumber = 1, int pageSize = 1)
         {
-            return View(_candidate.GetAll());
+            var result = new PagedResult<Candidates>()
+            {
+                Data = _candidate.GetAll(pageNumber, pageSize),
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                TotalItems = _candidate.totalCount()
+            };
+            return View(result);
         }
         [Authorize]
         public IActionResult CandidateProfile(string id)

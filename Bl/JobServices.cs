@@ -31,14 +31,18 @@ namespace Bl
             catch (Exception ex) { return Task.FromException(ex); }
         }
 
-        public List<Jobs> GetAll()
+        public List<Jobs> GetAll(int pageNum, int pageSize)
         {
             try
             {
-                return _context.TbJobs.ToList();
-
+                return _context.TbJobs.Skip(pageNum * pageSize - pageSize).Take(pageSize).ToList();
             }
             catch (Exception ex) { return new List<Jobs>(); }
+        }
+
+        public List<Jobs> GetAll()
+        {
+            return _context.TbJobs.ToList();
         }
 
         public List<Jobs> GetByCategory(int catId)
@@ -75,6 +79,10 @@ namespace Bl
                 return _context.TbJobs.Where(r => r.KindId == KindId).ToList();
             }
             catch(Exception ex) { return new List<Jobs>(); }
+        }
+        public int totalCount()
+        {
+           return _context.TbJobs.Count();
         }
 
 

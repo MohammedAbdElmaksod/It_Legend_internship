@@ -52,5 +52,15 @@ namespace Bl
         {
             throw new NotImplementedException();
         }
+
+        public List<Categories> GetAll(int pageNum, int pageSize)
+        {
+            return new List<Categories>();
+        }
+
+        public int totalCount()
+        {
+            return _context.TbCategory.Count();
+        }
     }
 }

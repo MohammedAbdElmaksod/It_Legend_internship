@@ -156,10 +156,10 @@
                     <aside class="sidebar">
                         <div class="sidebar-widget company-widget">
                             <div class="widget-content">
-
+                                <a class="btn btn-primary" asp-controller="Employee"asp-action="EmployerProfileDashboard" asp-route-id="@Model.userId">Edit Profile</a>
                                 <ul class="company-info mt-0">
-                                    <li>categories: <span><a href="#" class="">@Model.companyCategories?.companyCategoryName</a></span></li>
-                                    <li>Founded Date: <span>@Model.foundedDate</span></li>
+                                    <li>categories: <span><a href="#" class="">@Model.Categories?.CategoryName</a></span></li>
+                                    <li>Founded Date: <span>@Model.foundedDate?.ToString("MMM dd-yyyy")</span></li>
                                     <li>Company Size: <span>@Model.companySize </span></li>
                                     <li>Phone Number: <span>@Model.phoneNumber</span></li>
                                     <li>Business Email: <span>@Model.businessEmail</span></li>

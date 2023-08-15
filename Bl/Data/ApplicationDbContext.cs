@@ -25,11 +25,14 @@ namespace Bl.Data
         public virtual DbSet<JobStatus> TbJobStatus { get; set; }
         public virtual DbSet<Blogs> TbBlogs { get; set; }
         public virtual DbSet<SuccessStories> TbSuccessStories { get; set; }
+        public virtual DbSet<Contact> TbContact { get; set; }
+        public virtual DbSet<AppliedJobs> TbAppliedJobs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
             builder.Ignore<JobsWithRlated>();
+            builder.Ignore<EmployeeVm>();
         }
     }
 }

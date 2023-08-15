@@ -5,6 +5,7 @@ namespace Domains
 {
     public class Base
     {
+        [Key]
         public int Id { get; set; }
 
         public int? CurrentState { get; set; }

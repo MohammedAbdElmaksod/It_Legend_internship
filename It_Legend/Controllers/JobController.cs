@@ -3,7 +3,8 @@ using Domains;
 using Domains.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using cloudscribe.Pagination.Models;
 
 namespace It_Legend.Controllers
 {
@@ -18,9 +19,16 @@ namespace It_Legend.Controllers
             _mapper = mapper;
         }
 
-        public IActionResult Jobs()
+        public IActionResult Jobs(int pageNumber = 1, int pageSize = 1)
         {
-            return View(_jobService.GetAll());
+            var result = new PagedResult<Jobs>
+            {
+                Data = _jobService.GetAll(pageNumber, pageSize),
+                PageSize = pageSize,
+                PageNumber=pageNumber,
+                TotalItems = _jobService.totalCount()
+            };
+            return View(result);
         }
         public IActionResult JobPackages()
         {
@@ -29,7 +37,7 @@ namespace It_Legend.Controllers
         public IActionResult JobDescription(int id)
         {
             var job = _jobService.GetById(id);
-            var related = _mapper.Map <JobsWithRlated>(job);
+            var related = _mapper.Map<JobsWithRlated>(job);
             related.relatedJobs = _jobService.GetRelatedJobs((int)job.KindId);
             return View(related);
         }

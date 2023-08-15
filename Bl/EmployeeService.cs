@@ -1,5 +1,7 @@
 ﻿using Bl.Data;
 using Domains;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,20 +19,18 @@ namespace Bl
             _context = context;
         }
 
-        public async Task<Employees> AddEmployee(Employees employee)
+        public async Task EditEmployee(Employees employee)
         {
             if (employee == null) throw new ArgumentNullException();
-            else
-            {
-                await _context.TbEmplyees.AddAsync(employee);
-                _context.SaveChanges();
-                return employee;
-            }
+            _context.Entry(employee).State = EntityState.Modified;
+            
+            _context.SaveChanges();
         }
 
         public List<Employees> GetAllEmployees()
         {
             return _context.TbEmplyees.ToList();
+        
         }
 
         public Employees GetEmployeeById(int id)
@@ -40,6 +40,14 @@ namespace Bl
                 return _context.TbEmplyees.Where(c=>c.companyCategories.Id==c.companyCategoriesId).SingleOrDefault(i=>i.Id==id);
             }
             return new Employees();
+        }
+        public List<Employees> GetAll(int pageNum,int pageSize)
+        {
+            return _context.TbEmplyees.Skip(pageNum*pageSize - pageSize).Take(pageSize).ToList();
+        }
+        public int totalCount()
+        {
+            return _context.TbEmplyees.Count();
         }
     }
 }

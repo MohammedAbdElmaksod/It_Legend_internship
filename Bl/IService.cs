@@ -11,9 +11,11 @@ namespace Bl
     public interface IService<T> where T : class
     {
         List<T> GetAll();
+        List<T> GetAll(int pageNum,int pageSize);
         T GetById(int id);
         List<T> GetByCategory(int catId);
         Task Add(T t);
         List<T> GetRelatedJobs(int KindId);
+        public int totalCount();
     }
 }

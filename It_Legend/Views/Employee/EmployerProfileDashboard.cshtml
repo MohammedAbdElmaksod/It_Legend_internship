@@ -1,0 +1,257 @@
+﻿@model EmployeeVm
+@{
+    Layout = "_dashboardlayout";
+}
+
+<title>Employer Profile Dashboard</title>
+
+<!-- Sidebar Backdrop -->
+<div class="sidebar-backdrop"></div>
+
+<!-- User Sidebar -->
+<div class="user-sidebar">
+    <div class="sidebar-inner">
+        <div class="w-100 d-flex align-items-center justify-content-star gap-4">
+            <img src="~/images/candidate/candidate-user.png" alt="avatar" class="thumb shadow  rounded-circle" width="40">
+            <div class="flex-fill">
+                <a href="employer-profile.html" target="_blank" class=" btn-link">My Account</a>
+                <a href="employer-profile.html" target="_blank" class="theme-btn  btn-style-one small">View Profile</a>
+            </div>
+
+        </div>
+        <hr class="my-2">
+        <ul class="navigation">
+            <li><a href="employer-dashboard.html"> <i class="flaticon-book"></i> User Dashboard</a></li>
+            <li class="active"><a href="candidate-dashboard-profile.html"><i class="flaticon-businessman"></i>Profile</a></li>
+            <li><a href="dashboard-manage-job.html"><i class="flaticon-briefcase-1"></i>My Jobs </a></li>
+            <li><a href="submit-job.html"><i class="flaticon-pen"></i> Submit Job </a></li>
+            <li><a href="applicants-jobs.html"><i class="flaticon-megaphone"></i> Applicants Jobs</a></li>
+            <li><a href="shortlist-employer.html"><i class="flaticon-bookmark"></i>Shortlist Candidate </a></li>
+            <li><a href="candidate-alerts.html"><i class="flaticon-research"></i> Candidate Alerts </a></li>
+            <li><a href="dashboard-packages.html"><i class="flaticon-package"></i>Packages</a></li>
+            <li><a href=""><i class="flaticon-chat"></i>Messages</a></li>
+            <li><a href="change-password.html"><i class="flaticon-password"></i> Change Password</a></li>
+            <li><a href=""><i class="flaticon-trash"></i>Delete Profile</a></li>
+            <li><a href=""><i class=" las la-power-off"></i>Logout</a></li>
+        </ul>
+
+
+    </div>
+</div>
+<!-- End User Sidebar -->
+<!-- Dashboard -->
+<section class="user-dashboard">
+    <div class="dashboard-outer">
+        <div class="upper-title-box">
+            <h3>Edit Profile</h3>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Start Form -->
+                <form method="post" asp-controller="Employee" asp-action="EmployerProfileDashboard" enctype="multipart/form-data" class="w-100">
+                    <!-- Ls widget -->
+                    <div class="ls-widget">
+                        <div class="tabs-box">
+                            <div class="widget-title">
+                                <h4>My Profile</h4>
+                            </div>
+
+                            <div class="widget-content">
+                                <input name="id" value="@Model.Id" type="hidden" />
+                                <div class="uploading-outer">
+                                    <div class="uploadButton">
+                                        <input class="uploadButton-input" onchange="showImage(event)" name="file" type="file" asp-for="logoUrl" value="@Model.logoUrl" accept="image/*, application/pdf"
+                                               id="upload" multiple" />
+                                        <label class="uploadButton-button ripple-effect" for="upload">Browse Logo</label>
+                                        <span class="uploadButton-file-name"></span>
+
+                                    </div>
+                                    <div class="text">
+                                        Max file size is 1MB, Minimum dimension: 330x300 And Suitable files are .jpg & .png
+                                    </div>
+                                    <img id="outPutImage" style="height:150px;width:150px;" />
+
+                                </div>
+
+                                <div class="default-form">
+                                    <div class="row">
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Company name <span class="text-danger">*</span></label>
+                                            <input type="text" asp-for="companyName" placeholder="Company name ">
+                                            <span class="text-danger" asp-validation-for="companyName"></span>
+                                        </div>
+
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Business Email <span class="text-danger">*</span></label>
+                                            <input type="email" asp-for="businessEmail" placeholder="Business Email ">
+                                            <span class="text-danger" asp-validation-for="businessEmail"></span>
+                                        </div>
+
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Phone Number <span class="text-danger">*</span></label>
+                                            <input type="text" asp-for="phoneNumber" placeholder="phone number">
+                                            <span class="text-danger" asp-validation-for="phoneNumber"></span>
+                                        </div>
+
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Website</label>
+                                            <input type="text" asp-for="webSiteUrl" placeholder="www.example.com">
+                                        </div>
+
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Founded Date <span class="text-danger">*</span></label>
+                                            <input type="date" class="form-control" style="height:57px" asp-for="foundedDate" placeholder="Enter Date">
+                                            <span class="text-danger" asp-validation-for="foundedDate"></span>
+                                        </div>
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Company Size <span class="text-danger">*</span></label>
+                                            <input type="number" asp-for="companySize" placeholder="Company Size" onkeyup="validateSize()" maxlength="4" id="companySize">
+                                            <span class="text-danger" asp-validation-for="companySize"></span>
+                                            <span class="text-danger" style="display:none;" id="validateSize">you can not enter more than 4 digits</span>
+                                        </div>
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Categories <span class="text-danger">*</span></label>
+                                            <select class="chosen-select" asp-for="categoryId" asp-items="@(new SelectList(Model.lstCategories, "Id", "CategoryName"))">
+                                                <option></option>
+                                            </select>
+                                            <span class="text-danger" asp-validation-for="categoryId"></span>
+                                        </div>
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Introduction Video URL </label>
+                                            <input type="text" asp-for="introVideoUrl" placeholder="Introduction Video URL">
+                                        </div>
+                                        <!-- About Company -->
+                                        <div class="form-group col-lg-12 col-md-12">
+                                            <label>About Company <span class="text-danger">*</span></label>
+                                            <textarea id="aboutTextArea" asp-for="aboutCompany" placeholder="about Company"></textarea>
+                                            <span class="text-danger" asp-validation-for="aboutCompany"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ls-widget">
+                        <div class="tabs-box">
+                            <div class="widget-title">
+                                <h4>Social Network</h4>
+                            </div>
+
+                            <div class="widget-content">
+                                <div class="default-form">
+                                    <div class="row">
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Facebook</label>
+                                            <input type="text" asp-for="social.faceBook" placeholder="www.facebook.com/Invision">
+                                        </div>
+
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Twitter</label>
+                                            <input type="text" asp-for="social.twitter" placeholder="">
+                                        </div>
+
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Linkedin</label>
+                                            <input type="text" asp-for="social.linkedIn" placeholder="">
+                                        </div>
+
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Google Plus</label>
+                                            <input type="text" asp-for="social.google" placeholder="">
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ls widget -->
+                    <div class="ls-widget">
+                        <div class="tabs-box">
+                            <div class="widget-title">
+                                <h4>Contact Information</h4>
+                            </div>
+
+                            <div class="widget-content">
+                                <div class="default-form">
+                                    <div class="row">
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Country <span class="text-danger">*</span></label>
+                                            <input type="text" asp-for="contactInfo.Country" placeholder="country">
+                                            <span class="text-danger" asp-validation-for="contactInfo.Country"></span>
+                                        </div>
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>Government <span class="text-danger">*</span></label>
+                                            <input type="text" asp-for="contactInfo.Government" placeholder="Government  ">
+                                            <span class="text-danger" asp-validation-for="contactInfo.Government"></span>
+                                        </div>
+                                        <!-- Input -->
+                                        <div class="form-group col-lg-6 col-md-12">
+                                            <label>City <span class="text-danger">*</span></label>
+                                            <input type="text" asp-for="contactInfo.City" placeholder="City">
+                                            <span class="text-danger" asp-validation-for="contactInfo.City"></span>
+                                        </div>
+                                    </div>
+                                    <span class="text-danger" asp-validation-for="contactInfo"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Input -->
+                    <div class="form-group col-lg-12 col-md-12">
+                        <button type="submit" class="theme-btn btn-style-one">Save Profile</button>
+                    </div>
+                </form>
+                <!-- End  Form -->
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<script>
+    function showImage(event) {
+        var image = document.getElementById('outPutImage');
+        image.style.display = 'block';
+        var reader = new FileReader();
+        reader.onload = function () {
+            image.src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    };
+    function validateSize() {
+        var size = document.getElementById('companySize').value
+        var span = document.getElementById('validateSize')
+        if (size.length > 4) {
+            span.style.display = 'block';
+        }
+        else {
+            span.style.display = 'none';
+        }
+    }
+
+    tinymce.init({
+        selector: '#aboutTextArea'
+    })
+
+</script>
+<!-- End Dashboard -->
